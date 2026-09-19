@@ -11,3 +11,13 @@
  * slide class you reach for (`_class: quote`), a code-heavy layout, a
  * background. */
 @import url("astro-theme-university/styles/deck.css");
+
+/* astromotion's split-image panel always fills its box with
+   `background-size: cover`, which crops a landscape-ratio diagram down to a
+   narrow vertical sliver. `_class: landscape-split` on a slide with a
+   `![bg right:NN%]`/`left:NN%` image shows the whole image instead,
+   letterboxed within the panel rather than cropped to fill it. */
+.landscape-split .split-image {
+  background-size: contain;
+  background-color: #000;
+}
