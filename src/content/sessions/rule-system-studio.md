@@ -24,11 +24,14 @@ Bring the state machine from week 7, running.
 ## In the session
 
 1. Attend the lecture on rule systems, then move into tutorial time.
-2. Bring up the minimal game-loop structure, with an update step and a
-   render step running on every tick.
+2. Bring up the minimal game-loop structure from last week's state machine
+   work: an update step that advances every piece of state by one tick,
+   followed by a render step that only reads state and never changes it.
 3. Design one new interaction of your own, not the lecture's example.
-4. Add that interaction to the game-loop, composing it alongside the state
-   machines already in your project rather than replacing them.
+4. Add that interaction to the game-loop: give it its own state (or its own
+   state machine) and change that state only in the update step, composing
+   it alongside the state machines already in your project rather than
+   replacing them.
 5. Be ready to say where the line sits between "a system with rules" and "a
    scripted sequence" for your own example.
 6. Note that this is the last purely-programming session before the course

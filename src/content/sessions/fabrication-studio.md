@@ -30,9 +30,13 @@ or the laser cutter.
    printer or the laser cutter.
 3. Have a tutor check your file before any job starts — the fabrication lab
    runs supervised only, per the [lab safety policy](/policies/).
-4. Adjust your design for the machine's constraint the tutor flags (tolerance
-   or material behaviour) — 3D printing and laser cutting each fail in
-   different ways, and the point is fixing this before a job runs, not after.
+4. Adjust your design for the machine's constraint the tutor flags: a laser
+   cut needs cut and score lines separated onto their own layers or colours,
+   plus a kerf allowance so slotted parts still fit after the beam removes
+   its own width of material; a print needs enough wall thickness and the
+   right orientation and supports so it doesn't warp or collapse mid-print.
+   3D printing and laser cutting each fail in different ways, and the point
+   is fixing this before a job runs, not after.
 5. Run the checked file on the printer or laser cutter.
 6. Collect the fabricated part.
 

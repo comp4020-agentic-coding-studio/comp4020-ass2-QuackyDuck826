@@ -23,10 +23,13 @@ digitizing station gave you.
 ## In the session
 
 1. Attend the lecture on projection mapping, then move into tutorial time.
-2. Set up a projector in the studio.
+2. Set up a projector in the studio, aimed at a stand or table where your
+   week 1 object can sit still for the rest of the session.
 3. Calibrate it against your own scanned object from week 1 rather than a
-   flat test surface — a tutor is on hand here, since calibration goes wrong
-   in the same couple of places for almost everyone.
+   flat test surface: match the projected image's corners to the object's
+   edges first, then adjust for the curves and angles a flat calibration
+   grid can't account for — a tutor is on hand here, since calibration goes
+   wrong in the same couple of places for almost everyone.
 4. Map computed imagery onto the object's irregular geometry.
 5. Capture at least one still image or clip of the mapped result.
 

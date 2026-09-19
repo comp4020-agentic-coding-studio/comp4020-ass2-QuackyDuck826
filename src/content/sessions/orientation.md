@@ -27,8 +27,12 @@ prepare — this is the first session.
    a programming-proficient one, each mentoring the other's weaker half for
    the semester.
 3. Spend the rest of the block in hands-on tutorial time: build something
-   from cardboard and whatever scrap material is on hand, free-form, with no
-   brief beyond "make an object."
+   free-form, with no brief beyond "make an object," from whatever's in the
+   studio's scrap bins — cardboard, paper, scissors, box-knives, tape, and
+   similar scrap. Slot pieces together with tabs and slits if you want
+   something rigid and demountable, tape flaps closed if you're folding a
+   box-like form, or score a line along the cardboard's grain (not across
+   it) so it bends into a clean curve instead of creasing.
 4. Scan your object on the digitizing station so it exists as a 3D model.
 
 ## Afterwards

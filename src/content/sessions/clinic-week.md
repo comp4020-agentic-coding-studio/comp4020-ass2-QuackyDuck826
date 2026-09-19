@@ -23,7 +23,10 @@ code, or a physical build.
    plan and whatever's furthest behind.
 2. Go to the code clinic or the make clinic — there's no single schedule;
    both run at the same time, in different parts of the studio, for the
-   whole session.
+   whole session. Code clinic covers software: serial comms, state machines
+   and rule systems, or the creative-coding side of your pipeline. Make
+   clinic covers the physical side: wiring faults, sensor and actuator
+   problems, scanning and projection setup, or fabrication file prep.
 3. Work on whichever half of the project you brought, with a tutor from that
    track on hand.
 4. Move to the other clinic at any point if your final project needs both.

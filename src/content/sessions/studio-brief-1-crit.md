@@ -22,7 +22,8 @@ Bring Studio Brief 1, running, and the one decision you're least sure about.
 
 ## In the session
 
-1. Demo Studio Brief 1 in under two minutes, in studio-pair order.
+1. Demo Studio Brief 1 live rather than as slides — the piece running is
+   the demo — in under two minutes, in studio-pair order.
 2. Name which digitizing technique and which Programming I idea it
    combines, and the decision you're least sure about.
 3. Take feedback aimed at that named decision rather than at polish.

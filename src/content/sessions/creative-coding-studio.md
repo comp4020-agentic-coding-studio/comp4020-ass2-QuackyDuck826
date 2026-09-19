@@ -25,8 +25,11 @@ installed and checked back in week 1.
 
 1. Move into tutorial time straight after the lecture's on-ramp.
 2. If you're the art-proficient half of your studio pair, build the sketch
-   yourself, going slow and leaning on what you already know about
-   composition and colour.
+   yourself: set up a canvas, draw at least one shape inside a repeating
+   draw loop, and drive something visible in it — position, size or colour
+   — off the mouse or the clock. Go slow and lean on what you already know
+   about composition and colour to decide what that shape does, not on
+   memorised syntax.
 3. Art-proficient half: lean on your pair for mentoring rather than having
    them type the sketch for you.
 4. If you're the programming-proficient half, mentor your pair this week

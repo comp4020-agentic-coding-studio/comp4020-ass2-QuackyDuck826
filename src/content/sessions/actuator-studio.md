@@ -22,7 +22,12 @@ Bring the sensor and board from week 4, still wired and working.
 ## In the session
 
 1. Attend the lecture on actuators, then move into tutorial time.
-2. Pick a motor, servo, LED or speaker and wire it to your own board.
+2. Pick a motor, servo, LED or speaker and wire it to your own board: an LED
+   needs a current-limiting resistor in series, a small DC or vibration
+   motor needs a transistor or H-bridge driver rather than a direct pin (the
+   board can't supply that current on its own), a servo takes power, ground
+   and a single PWM-capable signal pin, and a piezo speaker can run straight
+   off a digital pin through a small resistor.
 3. Reconnect the sensor you wired in week 4 so it's on the same board as the
    new actuator.
 4. Before driving anything that draws more current than the board itself can

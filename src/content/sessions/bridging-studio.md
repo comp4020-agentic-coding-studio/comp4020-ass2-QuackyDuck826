@@ -25,10 +25,14 @@ Bring the sensor-to-actuator loop from week 5, still working.
 ## In the session
 
 1. Attend the lecture on serial comms, then move into tutorial time.
-2. Set a baud rate on the microcontroller and match it on the receiving
+2. Set a baud rate on the microcontroller (`Serial.begin(9600)`, or a higher
+   rate if you need more throughput) and match it exactly on the receiving
    code — a tutor is on hand for the baud-rate and framing errors that
    account for most of what goes wrong here.
-3. Get a sensor reading off the microcontroller over USB.
+3. Get a sensor reading off the microcontroller over USB, printed as plain
+   comma- or newline-delimited text (`Serial.println(value)`) so the
+   receiving code can parse it with nothing more than a split on that
+   delimiter.
 4. Feed that serial data into either your week 3 creative-coding sketch or
    the digitizing pipeline from weeks 1–2.
 5. Close the loop by sending an effect back out to the board.

@@ -22,8 +22,11 @@ time between presenters is short.
 
 ## In the session
 
-1. Set up your final project before your slot starts — changeover time
-   between presenters is short.
+1. Set up your final project before your slot starts: laptop charged and
+   plugged in, board powered on and already running its code, camera or
+   projector aimed and focused — changeover time between presenters is
+   short, so nothing about the setup should still be in progress once your
+   slot begins.
 2. Present in your fixed slot, in front of the whole studio and any guests.
 3. Name the three-plus techniques your project combines and the decision
    you are least sure about.

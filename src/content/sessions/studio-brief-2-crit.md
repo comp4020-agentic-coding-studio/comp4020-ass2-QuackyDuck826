@@ -22,8 +22,8 @@ Same shape as Studio Brief 1's crit, with more techniques on the table.
 
 ## In the session
 
-1. Demo Studio Brief 2 in under two minutes — same shape as Studio Brief 1's
-   crit, with more techniques on the table.
+1. Demo Studio Brief 2 live, in under two minutes — same shape as Studio
+   Brief 1's crit, with more techniques on the table.
 2. Name which techniques from weeks 1–6 it combines and the decision you're
    least sure about.
 3. Take feedback aimed at that named decision.
