@@ -1,0 +1,197 @@
+---
+import Card from "astro-theme-university/components/Card.astro";
+import CardGrid from "astro-theme-university/components/CardGrid.astro";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { siteConfig } from "../site-config";
+
+import handPaintedGame from "../decks/assets/week-01/hand-painted-game.svg";
+import projectedSculpture from "../decks/assets/week-01/projected-sculpture.svg";
+import buildingProjection from "../decks/assets/week-02/building-projection.svg";
+import mappedMask from "../decks/assets/week-02/mapped-mask.svg";
+import particleFlow from "../decks/assets/week-03/particle-flow.svg";
+import arcadeGame from "../decks/assets/week-03/arcade-game.svg";
+import presenceInstallation from "../decks/assets/week-04/presence-installation.svg";
+import reactiveObject from "../decks/assets/week-04/reactive-object.svg";
+import kineticSculpture from "../decks/assets/week-05/kinetic-sculpture.svg";
+import responsiveLight from "../decks/assets/week-05/responsive-light.svg";
+import dialControlsVisual from "../decks/assets/week-06/dial-controls-visual.svg";
+import webcamReactsToSensor from "../decks/assets/week-06/webcam-reacts-to-sensor.svg";
+import statePropImage from "../decks/assets/week-07/state-prop.svg";
+import characterStates from "../decks/assets/week-07/character-states.svg";
+import ruleEcosystem from "../decks/assets/week-08/rule-ecosystem.svg";
+import ruleLevel from "../decks/assets/week-08/rule-level.svg";
+import followingProjection from "../decks/assets/week-09/following-projection.svg";
+import presenceTrigger from "../decks/assets/week-09/presence-trigger.svg";
+import kineticMechanism from "../decks/assets/week-10/kinetic-mechanism.svg";
+import sensorEnclosure from "../decks/assets/week-10/sensor-enclosure.svg";
+
+const examples = [
+  {
+    image: handPaintedGame,
+    title: "A fully hand-painted game",
+    tag: "Week 1 · Digitizing media",
+    body: "A game built entirely from hand-painted artwork rather than scanned or photographed assets.",
+    alt: "Placeholder screenshot of a game with fully hand-painted graphics: a brush-textured landscape, a painted character sprite, and a simple score readout",
+  },
+  {
+    image: projectedSculpture,
+    title: "Projecting onto a scan",
+    tag: "Week 1 · Digitizing media",
+    body: "A scanned sculpture with a computed light pattern projection-mapped onto its own irregular surface.",
+    alt: "Placeholder photo of a sculpture with a computed pattern of coloured light projected onto its irregular surface, in a dark room",
+  },
+  {
+    image: buildingProjection,
+    title: "Mapping a building facade",
+    tag: "Week 2 · Projection mapping",
+    body: "A building facade carrying a computed light pattern, mapped precisely onto its own geometry.",
+    alt: "Placeholder illustration of a building facade at night with a computed geometric light pattern projection-mapped onto its windows and ledges, a projector visible in the foreground, as a public art piece",
+  },
+  {
+    image: mappedMask,
+    title: "A mapped performance prop",
+    tag: "Week 2 · Projection mapping",
+    body: "A performance mask or prop with a texture mapped onto its own irregular surface.",
+    alt: "Placeholder illustration of a performance mask on a stand with a computed texture projection-mapped onto its irregular curved surface, lit for a live show",
+  },
+  {
+    image: particleFlow,
+    title: "A generative artwork",
+    tag: "Week 3 · Creative coding",
+    body: "A generative artwork built from the same p5.js shapes and motion as a first sketch, scaled up.",
+    alt: "Placeholder illustration of a generative artwork made of small particles flowing along curved paths across a canvas, built from simple shapes and motion",
+  },
+  {
+    image: arcadeGame,
+    title: "A small arcade game",
+    tag: "Week 3 · Creative coding",
+    body: "A small arcade game with a canvas, an input-driven sprite, and a score readout.",
+    alt: "Placeholder screenshot of a simple arcade-style browser game with a canvas, a blocky sprite character, obstacles, and a score readout",
+  },
+  {
+    image: presenceInstallation,
+    title: "A presence-aware installation",
+    tag: "Week 4 · Sensors",
+    body: "An installation that senses a visitor approaching, using nothing more than a distance sensor.",
+    alt: "Placeholder illustration of a small gallery installation with a distance sensor watching a visitor's silhouette approach",
+  },
+  {
+    image: reactiveObject,
+    title: "A quietly reactive object",
+    tag: "Week 4 · Sensors",
+    body: "An object whose light or sound sensor reading drives a subtle, visible change.",
+    alt: "Placeholder illustration of an ordinary object whose colour shifts subtly in response to a light sensor reading",
+  },
+  {
+    image: kineticSculpture,
+    title: "A kinetic sculpture that isn't on a timer",
+    tag: "Week 5 · Actuators",
+    body: "A kinetic sculpture whose motor is driven by a live sensor reading, not a fixed loop.",
+    alt: "Placeholder illustration of a kinetic sculpture with a hidden motor, its arms shown mid-motion with motion lines suggesting sensor-driven movement rather than a fixed loop",
+  },
+  {
+    image: responsiveLight,
+    title: "A responsive light installation",
+    tag: "Week 5 · Actuators",
+    body: "An LED installation whose brightness or colour follows a sensor value in real time.",
+    alt: "Placeholder illustration of a wall installation of LED panels, one brightly lit and fading across the row, following a sensor reading",
+  },
+  {
+    image: dialControlsVisual,
+    title: "A physical dial driving a live visual",
+    tag: "Week 6 · Bridging code and hardware",
+    body: "A physical dial, streamed over serial, controlling a generative on-screen visual live.",
+    alt: "Placeholder illustration of a hand turning a physical dial on a small board, connected by a cable to a laptop screen showing a generative visual pattern changing live",
+  },
+  {
+    image: webcamReactsToSensor,
+    title: "A projection that reacts to a sensor",
+    tag: "Week 6 · Bridging code and hardware",
+    body: "A projected visual that visibly shifts the moment a physical sensor reading arrives.",
+    alt: "Placeholder illustration of a projected visual on a wall shifting colour as a physical sensor reading arrives over a serial cable from a small board",
+  },
+  {
+    image: statePropImage,
+    title: "A prop that cycles named states",
+    tag: "Week 7 · State machines",
+    body: "A turnstile or traffic-light-style prop that visibly cycles through a small set of named states.",
+    alt: "Placeholder diagram of a physical prop, like a traffic-light-style light, stepping through three named states in sequence with the current state highlighted",
+  },
+  {
+    image: characterStates,
+    title: "A character with idle, walk and jump",
+    tag: "Week 7 · State machines",
+    body: "An on-screen character driven entirely by a three-state idle/walk/jump state machine.",
+    alt: "Placeholder screenshot of an on-screen character shown three times, in idle, walk and jump poses, one per state",
+  },
+  {
+    image: ruleEcosystem,
+    title: "A small rule-driven ecosystem",
+    tag: "Week 8 · Rule systems",
+    body: "A handful of simple predator, prey and particle agents, each running its own small rule set.",
+    alt: "Placeholder screenshot of a small simulated ecosystem with a few simple agents, shown as geometric shapes moving and interacting under shared rules",
+  },
+  {
+    image: ruleLevel,
+    title: "A simple physics-driven level",
+    tag: "Week 8 · Rule systems",
+    body: "A small rule-based game level where collision and simple physics do the whole design.",
+    alt: "Placeholder screenshot of a small rule-based game level with platforms, a ball, a switch and a gate, illustrating simple physics and collision rules",
+  },
+  {
+    image: followingProjection,
+    title: "A projection that follows a visitor",
+    tag: "Week 9 · Camera tracking",
+    body: "A projected shape whose position is driven directly by a visitor's tracked movement.",
+    alt: "Placeholder photo of a dark installation room where a projected glowing shape on the floor follows the position of a visitor's silhouette",
+  },
+  {
+    image: presenceTrigger,
+    title: "A floor or wall triggered by presence",
+    tag: "Week 9 · Camera tracking",
+    body: "An interactive floor or wall panel that changes state the moment someone enters.",
+    alt: "Placeholder photo of an interactive floor panel made of a grid of tiles, with the tiles nearest a person's feet lit while the rest stay dark",
+  },
+  {
+    image: kineticMechanism,
+    title: "A laser-cut kinetic mechanism",
+    tag: "Week 10 · Fabrication",
+    body: "Gears or a linkage, cut from cardboard or thin ply, assembled into a simple moving mechanism.",
+    alt: "Placeholder illustration of a laser-cut kinetic mechanism: two meshed cardboard gears driving a simple crank-and-slider linkage on a flat cut sheet",
+  },
+  {
+    image: sensorEnclosure,
+    title: "A 3D-printed enclosure",
+    tag: "Week 10 · Fabrication",
+    body: "A 3D-printed housing, designed and printed to fit around a sensor or small circuit.",
+    alt: "Placeholder illustration of a 3D-printed enclosure housing a small sensor board, shown as a flat isometric box with visible print layer lines and a cutout revealing the board inside",
+  },
+] as const;
+---
+
+<ContentLayout
+  title="Gallery"
+  description="Placeholder examples of what the course's techniques can build, pulled from each week's lecture deck."
+  heroImage="/src/assets/banners/gallery.svg"
+  heroImageAlt=""
+  {...siteConfig}
+>
+  <p>
+    Every lecture deck closes with a couple of images showing what that
+    week's technique can build toward. These are all placeholders, not real
+    student work — collected here in one place as a preview of the range
+    across the semester, from hand-painted games to laser-cut mechanisms.
+  </p>
+  <CardGrid columns={3}>
+    {
+      examples.map((example) => (
+        <Card headingLevel="h2" title={example.title} image={example.image} imageAlt={example.alt}>
+          <p>
+            <small>{example.tag}</small>
+          </p>
+          <p>{example.body}</p>
+        </Card>
+      ))
+    }
+  </CardGrid>
+</ContentLayout>
