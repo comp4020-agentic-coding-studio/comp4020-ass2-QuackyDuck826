@@ -20,6 +20,8 @@ const { Content } = await render(session);
 <ContentLayout
   title={`Week ${session.data.week} ${sessionLabels.singular}: ${session.data.title}`}
   description={session.data.description}
+  heroImage="/src/assets/banners/sessions.svg"
+  heroImageAlt=""
   {...siteConfig}
 >
   <p><strong>{formatCourseDate(session.data.date)}</strong></p>
