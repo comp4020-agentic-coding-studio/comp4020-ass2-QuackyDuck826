@@ -46,7 +46,7 @@ export const slopCourseMetaSchema = z
 // digit (the level) changed from the starter's `1`.
 export const courseMeta = slopCourseMetaSchema.parse({
   code: "SLOP3446",
-  title: "Round Trip: Sending Matter Through Code and Back",
+  title: "Round Trip — Physical Artefacts Through the Machine and Back",
   session: "Semester 1",
   year: 2027,
   level: 3,
