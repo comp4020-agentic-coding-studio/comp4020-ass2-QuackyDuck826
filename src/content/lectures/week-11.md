@@ -8,6 +8,7 @@ date: 2027-05-10
 teachers:
   - marisol-quaye
   - idris-fenn
+slides: /decks/week-11/
 related:
   - sessions/clinic-week
 ---

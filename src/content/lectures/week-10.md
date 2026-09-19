@@ -7,6 +7,7 @@ week: 10
 date: 2027-05-03
 teachers:
   - marisol-quaye
+slides: /decks/week-10/
 related:
   - sessions/fabrication-studio
 ---

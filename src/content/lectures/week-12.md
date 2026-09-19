@@ -8,6 +8,7 @@ date: 2027-05-17
 teachers:
   - marisol-quaye
   - idris-fenn
+slides: /decks/week-12/
 related:
   - sessions/final-crit
   - assessments/final-project
