@@ -23,24 +23,58 @@ A program that behaves differently depending on what happened before
 
 ---
 
-## Building a state machine, step by step
+## Name your states before you write any logic
 
-1. Name a fixed, small set of states up front — `IDLE`, `WAITING`,
-   `TRIGGERED`, whatever your behaviour actually needs — before writing
-   any logic that uses them.
-2. Hold the current state in exactly one variable. If two variables can
-   disagree about what state you're in, you don't have a state machine
-   yet, you have a bug waiting to happen.
-3. Write the update step: given the current state and the input this
-   tick, decide whether to transition, and to what. This is the only
-   place state is allowed to change.
-4. Debounce and edge-detect the input feeding that update step — react to
-   the moment a button *becomes* pressed, not to every tick it's held
-   down, or one physical press becomes several transitions.
-5. Write a render step that only reads the current state to decide what
-   to show or do — it never changes state itself. Keeping that separation
-   is what stops rendering order or frame timing from quietly becoming
-   part of your logic.
+A state machine starts with a fixed, small list of states — `IDLE`,
+`WAITING`, `TRIGGERED`, whatever your behaviour actually needs. Write that
+list down before any logic uses it.
+
+```javascript
+const STATE = { IDLE: "IDLE", WAITING: "WAITING", TRIGGERED: "TRIGGERED" };
+```
+
+---
+
+## One variable, one truth
+
+Hold the current state in exactly one variable. If two variables can
+disagree about what state you're in, you don't have a state machine yet —
+you have a bug waiting to happen.
+
+---
+
+## The update step decides transitions
+
+```javascript
+function update(state, input) {
+  switch (state) {
+    case STATE.IDLE:
+      return input.triggered ? STATE.WAITING : STATE.IDLE;
+    case STATE.WAITING:
+      return input.confirmed ? STATE.TRIGGERED : STATE.WAITING;
+    default:
+      return state;
+  }
+}
+```
+
+Given the current state and the input this tick, decide whether to
+transition, and to what. This is the only place state is allowed to
+change.
+
+---
+
+## Debounce the input, keep render read-only
+
+```javascript
+if (pressed && !wasPressed) transition();
+```
+
+React to the moment a button *becomes* pressed, not to every tick it's
+held down, or one physical press becomes several transitions. Keep the
+render step read-only too — it only shows what the current state is, and
+never changes it, so rendering order or frame timing never quietly become
+part of your logic.
 
 ---
 

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder diagram contrasting two 3D scanning methods: structured-light scanning, where a station projects a striped pattern onto an object on a turntable, versus photogrammetry, where a camera takes overlapping photos from many angles around the object">
+  <rect width="800" height="500" fill="#f4ead9"/>
+
+  <!-- divider -->
+  <line x1="400" y1="20" x2="400" y2="460" stroke="#8a5a20" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- LEFT: structured-light scanning -->
+  <text x="200" y="46" font-family="sans-serif" font-size="20" fill="#3f2a12" text-anchor="middle" font-weight="bold">Structured-light scanning</text>
+
+  <!-- turntable -->
+  <ellipse cx="200" cy="400" rx="90" ry="18" fill="#8a5a20"/>
+
+  <!-- object on turntable -->
+  <path d="M170,400 L185,290 Q200,270 215,290 L230,400 Z" fill="#5c3d16"/>
+
+  <!-- projector unit -->
+  <rect x="66" y="150" width="70" height="46" rx="6" fill="#3f2a12"/>
+  <circle cx="136" cy="173" r="8" fill="#e7c98f"/>
+
+  <!-- striped projected pattern fanning onto the object -->
+  <g opacity="0.85">
+    <polygon points="144,173 168,300 158,300" fill="#b97d1c"/>
+    <polygon points="144,173 184,300 174,300" fill="#e7c98f"/>
+    <polygon points="144,173 200,300 190,300" fill="#b97d1c"/>
+    <polygon points="144,173 216,300 206,300" fill="#e7c98f"/>
+    <polygon points="144,173 232,300 222,300" fill="#b97d1c"/>
+  </g>
+
+  <!-- RIGHT: photogrammetry -->
+  <text x="600" y="46" font-family="sans-serif" font-size="20" fill="#3f2a12" text-anchor="middle" font-weight="bold">Photogrammetry</text>
+
+  <!-- object -->
+  <ellipse cx="600" cy="400" rx="90" ry="18" fill="#8a5a20"/>
+  <path d="M570,400 L585,290 Q600,270 615,290 L630,400 Z" fill="#5c3d16"/>
+
+  <!-- orbit path the camera walks around the object -->
+  <ellipse cx="600" cy="330" rx="150" ry="100" fill="none" stroke="#b97d1c" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <!-- cameras at overlapping positions around the orbit -->
+  <g>
+    <g transform="translate(450,330)">
+      <rect x="-14" y="-10" width="28" height="20" rx="3" fill="#3f2a12"/>
+      <circle cx="0" cy="0" r="6" fill="#e7c98f"/>
+    </g>
+    <g transform="translate(520,240)">
+      <rect x="-14" y="-10" width="28" height="20" rx="3" fill="#3f2a12"/>
+      <circle cx="0" cy="0" r="6" fill="#e7c98f"/>
+    </g>
+    <g transform="translate(680,240)">
+      <rect x="-14" y="-10" width="28" height="20" rx="3" fill="#3f2a12"/>
+      <circle cx="0" cy="0" r="6" fill="#e7c98f"/>
+    </g>
+    <g transform="translate(750,330)">
+      <rect x="-14" y="-10" width="28" height="20" rx="3" fill="#3f2a12"/>
+      <circle cx="0" cy="0" r="6" fill="#e7c98f"/>
+    </g>
+  </g>
+
+  <!-- lines of sight showing overlapping coverage of the object -->
+  <g stroke="#5c3d16" stroke-width="1.5" opacity="0.5">
+    <line x1="450" y1="330" x2="600" y2="340"/>
+    <line x1="520" y1="240" x2="600" y2="340"/>
+    <line x1="680" y1="240" x2="600" y2="340"/>
+    <line x1="750" y1="330" x2="600" y2="340"/>
+  </g>
+
+  <text x="400" y="480" font-family="sans-serif" font-size="18" fill="#8a5a20" text-anchor="middle">placeholder — structured-light scanning vs. photogrammetry</text>
+</svg>

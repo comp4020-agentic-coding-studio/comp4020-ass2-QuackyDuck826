@@ -24,20 +24,40 @@ Turning light, distance, motion or force into a number your code can use
 
 ---
 
-## Reading a sensor, step by step
+## Wiring a sensor
 
-1. Wire the sensor to a pin — analog for a continuously varying signal
-   (light, distance), digital for an on/off one (a button, some motion
-   sensors).
-2. Read the pin in a loop — `analogRead()` for analog, `digitalRead()`
-   for digital — and you get back a raw number the sensor produced.
-3. Print that raw number before anything else — a value you can see on
-   screen is a value you can trust; one you can't see is a guess.
-4. Map or scale the raw range onto the range you actually need — a
-   `map()` from "0–1023 the pin reports" to "0–255 a brightness wants",
-   for instance.
-5. Only once the printed, scaled number moves the way you'd expect when
-   you wave a hand or change the light, build anything else on top of it.
+An analog pin is for a continuously varying signal — light or
+distance — where the value can sit anywhere across a range. A digital
+pin is for something that's simply on or off, like a button or some
+motion sensors. The pin type you choose has to match what the sensor
+actually produces.
+
+---
+
+## Reading the raw value
+
+Read the pin in a loop, and print whatever comes back before you do
+anything else with it. A value you can see on screen is a value you
+can trust — one you can't see is a guess.
+
+```cpp
+int raw = analogRead(A0);
+Serial.println(raw);
+```
+
+---
+
+## Scaling it to what you need
+
+The raw range a pin reports rarely matches the range something else
+wants, so scale it with `map()`.
+
+```cpp
+int brightness = map(raw, 0, 1023, 0, 255);
+```
+
+Only build anything else on top once that printed, scaled number moves
+the way you'd expect when you wave a hand or change the light.
 
 ---
 

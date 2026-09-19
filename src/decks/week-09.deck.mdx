@@ -24,21 +24,44 @@ A camera feed, watched live, rather than a single photo taken once
 
 ---
 
-## Turning a camera feed into a usable signal, step by step
+## The tracking pipeline
 
-1. Start from a live feed rather than a single photo — every frame is a
-   new capture, arriving continuously instead of once.
-2. Isolate what you actually want to track from the background: simple
-   motion or frame-differencing to find what changed between two frames,
-   or colour/blob tracking to find a particular hue or shape.
-3. Reduce that isolated region to a small continuous number stream — an
-   x/y position, a size, a count — the same way a sensor reading from
-   week 4 was a number your code could use.
-4. Smooth or threshold that stream so noise between frames doesn't read
-   as a state change on its own.
-5. Feed the resulting stream into a state machine or rule system from
-   weeks 7–8 exactly as if it were a sensor: transitions triggered by
-   what the camera now sees, not what a button reports.
+![bg right:45%](./assets/week-09/tracking-pipeline.svg)
+
+A live feed is a new capture every frame, arriving continuously rather
+than once. Getting from that to something a state machine can use runs
+through four steps: isolate, reduce, smooth, feed in.
+
+---
+
+## Isolate what you're tracking from the background
+
+```javascript
+const diff = Math.abs(currentFrame[i] - previousFrame[i]);
+if (diff > threshold) motionPixels.push(i);
+```
+
+Simple motion or frame-differencing finds what changed between two
+frames. Colour or blob tracking instead looks for a particular hue or
+shape, wherever it is in the frame.
+
+---
+
+## Reduce it to a number stream
+
+Reduce the isolated region to a small continuous number stream — an x/y
+position, a size, a count — the same way a sensor reading from week 4 was
+a number your code could use.
+
+---
+
+## Smooth it, then feed it in like a sensor
+
+Smooth or threshold that stream so noise between frames doesn't read as a
+state change on its own. Then feed the resulting stream into a state
+machine or rule system from weeks 7–8 exactly as if it were a sensor —
+transitions triggered by what the camera now sees, not what a button
+reports.
 
 ---
 

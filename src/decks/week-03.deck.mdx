@@ -24,24 +24,99 @@ Draw something, change a number, see the change — in the same second
 
 ---
 
-## Building a sketch, step by step
+## Set up a canvas, draw a shape
 
-1. Set up a canvas inside `setup()`.
-2. Draw at least one shape inside `draw()`.
-3. Drive something visible — position, size, or colour — off the mouse
-   position or the clock rather than a fixed number.
-4. When something breaks, ask your pair to point at the problem and explain
-   it, then type the fix yourself.
+```javascript
+function setup() {
+  createCanvas(600, 400);
+}
+
+function draw() {
+  background(220);
+  ellipse(300, 200, 80, 80);
+}
+```
+
+`setup()` runs once and builds the canvas. `draw()` runs every frame — put
+at least one shape inside it.
 
 ---
 
-## Scouting further, step by step
+## Drive it off the mouse or the clock
 
-1. Push past the on-ramp shapes into what p5.js gives you for free.
-2. Animate an array of objects inside the draw loop, rather than one shape.
-3. Use a `p5.Vector` for motion instead of separate x/y maths.
-4. Swap plain randomness for `noise()` to get organic movement.
-5. Try the `WEBGL` renderer for a first 3D primitive.
+```javascript
+function draw() {
+  background(220);
+  let size = map(mouseX, 0, width, 20, 200);
+  fill(millis() % 255, 100, 200);
+  ellipse(300, 200, size, size);
+}
+```
+
+Position, size, or colour — pick one and drive it off `mouseX` or
+`millis()` instead of a fixed number.
+
+---
+
+## When something breaks
+
+Ask your pair to point at the problem and explain it, then type the fix
+yourself. The explaining is the point, not the fixing.
+
+---
+
+## Scouting further: an array, driven by vectors
+
+```javascript
+let particles = [];
+
+function draw() {
+  background(20);
+  for (let p of particles) {
+    p.pos.add(p.vel);
+    circle(p.pos.x, p.pos.y, 10);
+  }
+}
+```
+
+Push past one shape into an array of objects animated inside the draw
+loop, each moving under its own `p5.Vector` rather than separate x/y
+maths.
+
+---
+
+## Organic motion with noise()
+
+```javascript
+function draw() {
+  background(20);
+  let n = noise(frameCount * 0.01);
+  let x = map(n, 0, 1, 0, width);
+  circle(x, 200, 20);
+}
+```
+
+Swap plain randomness for `noise()` and motion stops jittering — it
+drifts, the way organic movement does.
+
+---
+
+## A first step into 3D
+
+```javascript
+function setup() {
+  createCanvas(600, 400, WEBGL);
+}
+
+function draw() {
+  background(20);
+  rotateY(frameCount * 0.01);
+  box(100);
+}
+```
+
+The `WEBGL` renderer swaps in for the default one — same `setup()`/`draw()`
+loop, now with depth.
 
 ---
 

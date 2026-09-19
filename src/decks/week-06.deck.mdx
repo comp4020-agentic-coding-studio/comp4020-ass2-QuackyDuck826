@@ -24,20 +24,49 @@ Serial comms connects the physical-computing pillar to everything else
 
 ---
 
-## Getting a reading over serial, step by step
+## Matching baud rates
 
-1. Set a baud rate on the board — `Serial.begin(9600)` is a safe
-   default — and match it exactly on the receiving code; a mismatch
-   doesn't just slow things down, it garbles or drops the message.
-2. Print the sensor value as plain, simply-delimited text —
-   `Serial.println(value)` — rather than anything more structured, so
-   the receiving code only needs to split on that delimiter.
-3. Read that stream into the code side: your week 3 creative-coding
-   sketch, or the digitizing pipeline from weeks 1–2, picks it up in
-   place of a value that used to come from the mouse or the clock.
-4. Send something back out to the board — even a computed value into a
-   week 5 LED or motor — so the loop is a genuine round trip, not a
-   one-way stream of data disappearing into a laptop.
+Set a baud rate on the board and match it exactly on the receiving
+code. A mismatch doesn't just slow things down — it garbles or drops
+the message.
+
+```cpp
+Serial.begin(9600);
+```
+
+---
+
+## Printing a plain stream
+
+Print the sensor value as plain, simply-delimited text rather than
+anything more structured, so the receiving code only needs to split on
+that delimiter.
+
+```cpp
+Serial.println(value);
+```
+
+---
+
+## Reading it into your sketch
+
+That stream picks up in place of a value that used to come from the
+mouse or the clock — your week 3 creative-coding sketch, or the
+digitizing pipeline from weeks 1–2, can use it directly.
+
+```javascript
+function readSerial(data) {
+  let value = int(data); // was mouseX
+}
+```
+
+---
+
+## Sending something back
+
+Send something back out to the board — even a computed value into a
+week 5 LED or motor — so the loop is a genuine round trip, not a
+one-way stream of data disappearing into a laptop.
 
 ---
 

@@ -23,24 +23,51 @@ The microcontroller stops reading the world and starts acting on it
 
 ---
 
-## Wiring an actuator, step by step
+## LED
 
-1. **LED** — add a current-limiting resistor in series before power ever
-   goes on; without one it draws whatever the pin will give it and burns
-   out in seconds.
-2. **Motor** — drive it through a transistor or H-bridge, never straight
-   off a pin; a pin supplies a few tens of milliamps, a motor wants far
-   more, so the driver switches a separate supply instead.
-3. **Servo** — power, ground, and one PWM signal pin; the width of the
-   pulse on that pin sets the angle, so the code side is close to one
-   line once it's wired correctly.
-4. **Speaker (piezo)** — a digital pin through a small resistor is
-   enough, no driver needed — the quickest actuator here for an early
-   win.
-5. Get a tutor to check the wiring before powering anything that draws
-   more current than the board supplies, then close the loop: drive the
-   actuator's output from last week's sensor reading, not a hard-coded
-   value.
+Add a current-limiting resistor in series before power ever goes on.
+Without one, it draws whatever the pin will give it and burns out in
+seconds.
+
+```cpp
+analogWrite(ledPin, 128); // half brightness
+```
+
+---
+
+## Motor
+
+Drive it through a transistor or H-bridge, never straight off a pin —
+a pin supplies a few tens of milliamps, a motor wants far more, so the
+driver switches a separate supply instead.
+
+---
+
+## Servo
+
+Wire power, ground, and one PWM signal pin. The width of the pulse on
+that pin sets the angle, so the code side is close to one line once
+it's wired correctly.
+
+```cpp
+servo.write(90); // angle in degrees
+```
+
+---
+
+## Speaker (piezo)
+
+A digital pin through a small resistor is enough — no driver needed.
+It's the quickest actuator here for an early win.
+
+---
+
+## Closing the loop
+
+Get a tutor to check the wiring before powering anything that draws
+more current than the board supplies. Then close the loop: drive the
+actuator's output from last week's sensor reading, not a hard-coded
+value.
 
 ---
 

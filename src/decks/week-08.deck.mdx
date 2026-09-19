@@ -22,35 +22,58 @@ Several pieces of state, interacting under a consistent set of rules
 
 ---
 
-## The game-loop shape, step by step
+## One loop, ticking forever
 
-1. Run one loop, forever, ticking at a steady rate rather than reacting
-   only when something happens.
-2. On every tick, run the update step first: advance every piece of
-   state by one step, including any state machines from last week.
-3. Keep the render step strictly separate and second: it only reads
-   state to decide what to draw or output, never changes it. Letting
-   render code change state is how bugs start depending on drawing order
-   instead of your rules.
-4. Compose several small, independent pieces of state side by side rather
-   than growing one state machine to do everything — a rule system is
-   built from parts that interact, not from one part rewritten to cope.
+A game loop runs once, forever, ticking at a steady rate — rather than
+reacting only when something happens.
 
 ---
 
-## Adding one interaction, step by step
+## Update first, render second, always
 
-1. Pick one interaction small enough to build in a session, that changes
-   how two existing pieces of state affect each other — a collision, a
-   trigger, a condition that only matters when two other things are true.
-2. Give the interaction its own state, and change that state only in the
-   update step, alongside the states already running.
-3. Let it read other state machines' state rather than reach in and
-   change it directly — reaching in and changing another machine's
-   internals is usually a sign the boundary is wrong.
-4. Check your result against the "rules vs. scripted sequence" line: a
-   scripted sequence plays a fixed order back regardless of state; a rule
-   system produces combinations you didn't explicitly author.
+```javascript
+function tick() {
+  update();  // advance every piece of state by one step
+  render();  // only reads state to decide what to draw — never changes it
+}
+```
+
+`update()` runs first and advances every piece of state by one step,
+including any state machines from last week. `render()` runs second and
+only reads that state. Letting render code change state is how bugs start
+depending on drawing order instead of your rules.
+
+---
+
+## Compose parts, don't grow one machine
+
+Build a rule system out of several small, independent pieces of state
+that interact — not by growing one state machine to do everything. A rule
+system is made of parts, not one part rewritten to cope.
+
+---
+
+## Pick one small interaction
+
+Pick one interaction small enough to build in a session — one that
+changes how two existing pieces of state affect each other. A collision,
+a trigger, a condition that only matters when two other things are true.
+
+---
+
+## Give it its own state, and check it against the rules
+
+```javascript
+let interactionState = "waiting"; // changed only inside update()
+```
+
+Change the interaction's state only in the update step, alongside the
+states already running, and let it read other state machines' state
+rather than reach in and change it directly — reaching in is usually a
+sign the boundary is wrong. Then check the result against the "rules vs.
+scripted sequence" line: a scripted sequence plays a fixed order back
+regardless of state; a rule system produces combinations you didn't
+explicitly author.
 
 ---
 
