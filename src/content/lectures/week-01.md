@@ -1,30 +1,35 @@
 ---
-title: Opening lecture
+title: "Orientation + Digitizing Media I"
 description:
-  The first lecture — what the course is, why it is shaped this way, and what
-  happens in week 1
+  What Round Trip is, why it runs dual-audience, and the first
+  digitizing technique — scanning and photogrammetry
 week: 1
 date: 2027-02-22
 teachers:
   - marisol-quaye
 slides: /decks/week-01/
 related:
-  - sessions/01-getting-started
+  - sessions/orientation
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
+The course's throughline: a piece of matter makes a round trip through
+digital process and back — captured, transformed, and returned to physical
+form or effect. Three technique pillars (digitizing, programming, physical
+computing) feed that one idea across the semester rather than sitting as
+separate units.
 
-Replace this page. A lecture entry says what was covered and links to the pages
-that own the detail, so the lecture stays short and nothing is explained twice.
-
-The `related:` ref above is a graph edge: it renders on this page and on the
-session's, so declare a connection once, on whichever side is convenient.
-
-The page renders its `slides:` link automatically. Decks are markdown too,
-under `src/decks/`; the path is part of the lecture's API metadata.
+Round Trip assumes prior depth in *either* physical/studio-art practice *or*
+programming, not both, and spends the semester cross-training whichever half
+you don't already have. Today's studio pairs are deliberately mixed: an
+art-proficient student with a programming-proficient one, each mentoring the
+other's weaker half for the rest of the semester.
 
 ## Outline
 
-- what the course is for
-- how the weeks are shaped
-- what to do before the first session
+- the round-trip thesis, and how the three pillars serve it
+- why the course is dual-audience, and what that means for how weeks run
+- studio pairing for the semester — one art-strength, one code-strength,
+  paired deliberately
+- Digitizing Media I: capturing a physical object as data — structured-light
+  scanning and photogrammetry from a photo set
+- what to bring to next week

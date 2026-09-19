@@ -1,17 +1,25 @@
 ---
 title: Idris Fenn
 description:
-  A tutor working across the course's first reviews and the practical work that
-  follows them.
+  Tutor across the programming and physical-computing weeks. Came up through
+  software, then learned to solder so the code had somewhere to go.
 affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: idris.fenn@slop.university
-contact: Ask during sessions, or email when a question cannot wait until the next one.
-photo: ./idris-fenn.avif
-photoAlt: A stylised portrait of a person facing the viewer, flat gold and black shapes on warm cream, in a two-ink risograph print
+contact:
+  Ask during studio sessions first; email when a question can't wait until
+  the next one.
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Idris came up writing software — a few years in tools and interactive
+graphics — and got pulled sideways into physical computing when a personal
+project needed a sensor instead of a mouse. That sideways move is most of why
+they're teaching the on-ramp weeks: the creative-coding pillar in week 3 and
+the Arduino unit either side of the mid-semester break are pitched at exactly
+the crossing they had to make themselves, from "I can program" to "I can make
+a thing that programs the physical world."
 
-Replace this entry. A second person makes the listing, role ordering and
-teacher-reference fields visible before you replace the cast with your own.
+Runs the studio pairs in week 1, the two on-ramp pillars, and the week 11
+clinic tracks. If a brief's mechanics are unclear — what to submit, what
+counts as combining techniques — ask in session or by email; questions about
+whether an idea is any good belong at the crit, not in an inbox.

@@ -1,38 +1,50 @@
 ---
-title: Final project
+title: "Final Project"
 description:
-  The capstone — a placeholder brief for the larger piece of work the semester
-  builds towards
+  The capstone — an open-theme piece combining three or more techniques from
+  across the semester, shown at the grand show
 week: 12
-due: 2027-05-28T12:00:00+10:00
-weight: 60
+due: 2027-05-21T12:00:00+10:00
+weight: 40
 marking:
   mode: holistic
   description:
-    The final project is judged as a whole against the brief, with particular
-    attention to whether the result stands alone and whether its scope fits the
-    semester that produced it.
+    Judged as a whole against your own plan from Final Planning & Ideation —
+    whether the finished piece stands on its own at the crit without you
+    there to explain it, whether it combines three or more techniques in a
+    way that's load-bearing rather than decorative, and whether its scope
+    matched the time available rather than quietly assuming more.
 spec:
-  - submitted by the deadline, in the format named below
-  - it stands on its own, without you there to explain it
-  - it answers the brief rather than restating it
+  - submitted by the deadline and presentable in your final-crit slot
+  - combines three or more techniques from the semester's pillars
+  - the theme is your own, open rather than assigned
+  - it runs live at the crit, not only in a recording
+related:
+  - final-planning
 ---
-
-<!-- STARTER_CONTENT: replace this assessment brief, then remove this comment. -->
-
-Replace this brief. The final project is where a course's weights usually
-concentrate, so it is worth being explicit about how the earlier work feeds it.
 
 ## The brief
 
-> One sentence, again as a blockquote.
+> Send a piece of matter through the machine and back, your own way, using
+> three or more techniques from the semester.
 
-Say what scope is realistic in the time available. A brief that quietly assumes
-twice the available hours is the most common way a capstone goes wrong.
+Open theme, your own proposal from Final Planning & Ideation. The only fixed
+constraint is the round trip itself: physical matter or signal goes in,
+something computed happens to it, and something comes back out — as an
+object, an effect, or a behaviour. Beyond that, whether the digitizing
+pillar, the programming pillars, or physical computing carry the most weight
+is your call, and it's fine for the balance to lean toward whichever half of
+the toolkit you came into the course already strong in, as long as three
+techniques are genuinely load-bearing.
+
+A project that quietly assumes more hours than the three studio weeks after
+Final Planning give you is the most common way a capstone like this goes
+wrong — the risk you named in that plan is worth re-reading before you commit
+to final scope.
 
 ## What you submit
 
-The artefact, and whatever a marker needs to run or read it.
-
-This one demonstrates the alternative marking mode: a holistic explanation
-rather than weighted criteria. The site renders either mode from frontmatter.
+The piece itself, running, plus whatever a marker needs to run or read it if
+it isn't purely physical (code, firmware, or fabrication files). It's shown
+live at the final crit; a recording is a fallback for anything that can't
+survive being unplugged and moved, not a substitute for showing up working.

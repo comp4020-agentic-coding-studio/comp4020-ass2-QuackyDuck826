@@ -1,23 +1,27 @@
 ---
-title: Second lecture
+title: "Digitizing Media I, continued"
 description:
-  Week 2 — the first substantive material, and the run-up to the first review
+  Projection mapping — throwing computed light back onto the physical
+  surface you scanned last week
 week: 2
 date: 2027-03-01
 teachers:
-  - idris-fenn
+  - marisol-quaye
 related:
-  - sessions/02-first-review
-  - assessments/assignment-1
+  - sessions/projection-mapping-studio
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. It exists so the lectures listing sorts by week and the
-related block has more than one edge to draw.
+The second half of the digitizing pillar: instead of capturing a surface as
+data, you project computed light *onto* a surface, so the digital process
+returns to the physical object in the same session — a small round trip
+inside the bigger one the course is named for.
 
 ## Outline
 
-- the first substantive material, and where it shows up in practice
-- what the first review is looking for
-- reading before next week
+- mapping a projector to an irregular physical surface
+- calibration: why a straight rectangle mapped onto a curved object goes wrong,
+  and how to fix it
+- what "digitized" work looks like feeding into next week's programming
+  on-ramp
+- Studio Brief 1 (due week 4) opens — it asks you to combine this pillar with
+  the one starting next week
