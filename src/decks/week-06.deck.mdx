@@ -1,0 +1,69 @@
+---
+title: "Round Trip — Week 6"
+description:
+  Getting sensor data off the microcontroller and into the digital pipeline
+---
+
+{/* _class: impact */}
+
+# Bridging
+
+Serial comms connects the physical-computing pillar to everything else
+
+---
+
+## Recap
+
+- serial data over USB: what a baud rate is, and what goes wrong when
+  the two ends don't agree on it
+- reading a live sensor stream into a Programming I sketch
+- putting the whole loop together: physical input, through the board,
+  into code, back out to an effect
+- last session before the break — Studio Brief 2 (due week 7) draws on
+  everything from weeks 1–6
+
+---
+
+## Getting a reading over serial, step by step
+
+1. Set a baud rate on the board — `Serial.begin(9600)` is a safe
+   default — and match it exactly on the receiving code; a mismatch
+   doesn't just slow things down, it garbles or drops the message.
+2. Print the sensor value as plain, simply-delimited text —
+   `Serial.println(value)` — rather than anything more structured, so
+   the receiving code only needs to split on that delimiter.
+3. Read that stream into the code side: your week 3 creative-coding
+   sketch, or the digitizing pipeline from weeks 1–2, picks it up in
+   place of a value that used to come from the mouse or the clock.
+4. Send something back out to the board — even a computed value into a
+   week 5 LED or motor — so the loop is a genuine round trip, not a
+   one-way stream of data disappearing into a laptop.
+
+---
+
+## What this can build toward: a physical dial driving a live visual
+
+![bg right:45%](./assets/week-06/dial-controls-visual.svg)
+
+A knob or sensor read on the board, streamed over serial into a
+generative sketch, changing what's on screen live rather than through a
+mouse or a slider.
+
+---
+
+## What this can build toward: a projection that reacts to a sensor
+
+![bg right:45%](./assets/week-06/webcam-reacts-to-sensor.svg)
+
+A webcam feed or projected visual that visibly shifts when a physical
+sensor reading arrives over serial — the digitizing and physical
+computing pillars meeting through the same plain, delimited stream.
+
+---
+
+{/* _class: banner */}
+
+## Next week
+
+Over the break, nothing is due. First week back: Programming II —
+state machines, and Studio Brief 2's crit
