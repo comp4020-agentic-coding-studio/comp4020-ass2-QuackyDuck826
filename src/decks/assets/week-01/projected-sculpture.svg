@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder photo of a sculpture with a computed pattern of coloured light projected onto its irregular surface, in a dark room">
+  <defs>
+    <clipPath id="sculpture-shape">
+      <path d="M330,460 L260,380 L280,270 L240,190 L320,120 L430,90 L520,140 L560,230 L540,330 L580,420 L470,470 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="800" height="500" fill="#14100a"/>
+
+  <!-- projector beam -->
+  <polygon points="700,60 760,60 620,300 520,260" fill="#f4ead9" opacity="0.06"/>
+  <rect x="690" y="40" width="40" height="26" rx="4" fill="#3f2a12"/>
+  <circle cx="695" cy="53" r="5" fill="#e7c98f"/>
+
+  <!-- sculpture base geometry (undecorated) -->
+  <path d="M330,460 L260,380 L280,270 L240,190 L320,120 L430,90 L520,140 L560,230 L540,330 L580,420 L470,470 Z" fill="#3f2a12"/>
+
+  <!-- projected imagery, clipped to the sculpture's own irregular silhouette -->
+  <g clip-path="url(#sculpture-shape)">
+    <rect x="240" y="80" width="360" height="400" fill="#14100a"/>
+    <rect x="240" y="80" width="120" height="400" fill="#b97d1c"/>
+    <rect x="360" y="80" width="90" height="400" fill="#e7c98f"/>
+    <rect x="450" y="80" width="150" height="400" fill="#8a5a20"/>
+    <circle cx="400" cy="260" r="70" fill="#f4ead9" opacity="0.85"/>
+    <path d="M240,140 L600,340" stroke="#14100a" stroke-width="10"/>
+    <path d="M240,340 L600,140" stroke="#14100a" stroke-width="10"/>
+  </g>
+
+  <!-- floor shadow -->
+  <ellipse cx="410" cy="472" rx="160" ry="18" fill="#000000" opacity="0.5"/>
+
+  <text x="400" y="30" font-family="sans-serif" font-size="18" fill="#e7c98f" text-anchor="middle">placeholder — projection mapped onto a scanned sculpture</text>
+</svg>

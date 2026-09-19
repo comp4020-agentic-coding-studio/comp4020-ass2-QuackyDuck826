@@ -26,8 +26,40 @@ const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
   {...siteConfig}
 >
   <p><strong>{formatCourseDate(lecture.data.date)}</strong></p>
-  {lecture.data.slides && <p><a href={withBase(lecture.data.slides)}>Open the slides</a></p>}
+  {
+    lecture.data.slides && (
+      <figure class="deck-embed">
+        <iframe
+          src={withBase(lecture.data.slides)}
+          title={`${title} — slides`}
+          loading="lazy"
+        />
+        <figcaption>
+          <a href={withBase(lecture.data.slides)}>Open the slides full screen &#8599;</a>
+        </figcaption>
+      </figure>
+    )
+  }
   <Content />
   <TeachingTeam teachers={lecture.data.teachers} />
   <RelatedContent entry={lecture} collections={graphCollections} />
 </ContentLayout>
+
+<style>
+  .deck-embed {
+    margin: 0 0 2rem;
+  }
+
+  .deck-embed iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  }
+
+  .deck-embed figcaption {
+    margin-block-start: 0.5rem;
+    font-size: 0.9rem;
+    text-align: right;
+  }
+</style>
