@@ -2,6 +2,7 @@
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 ---
@@ -30,7 +31,10 @@ import { sessionLabels, siteConfig } from "../site-config";
     project ask you to combine techniques into one working piece rather than
     treat them as separate exercises, and you'll leave with a small personal
     toolkit spanning both halves — plus a finished piece shown at the
-    semester's grand show.
+    semester's grand show. The <a href={withBase("/gallery/")}>Gallery</a> collects
+    examples of what these techniques can build: some are complete pieces on
+    their own, others are single-technique components meant to be combined
+    into something that fits the final project's brief.
   </p>
 
   <h2>Who it is for</h2>
@@ -58,6 +62,9 @@ import { sessionLabels, siteConfig } from "../site-config";
     </Card>
     <Card title="People" href="/people/">
       <p>Who teaches the course and how to reach them.</p>
+    </Card>
+    <Card title="Gallery" href="/gallery/">
+      <p>What the semester's techniques can build, drawn from every lecture's deck.</p>
     </Card>
   </CardGrid>
 </ContentLayout>

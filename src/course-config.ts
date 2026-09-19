@@ -46,15 +46,15 @@ export const slopCourseMetaSchema = z
 // digit (the level) changed from the starter's `1`.
 export const courseMeta = slopCourseMetaSchema.parse({
   code: "SLOP3446",
-  title: "Round Trip: Sending Matter Through the Machine and Back",
+  title: "Round Trip: Sending Matter Through Code and Back",
   session: "Semester 1",
   year: 2027,
   level: 3,
   startDate: "2027-02-22",
   endDate: "2027-05-21",
   description:
-    "A studio course: matter makes a round trip through digital process and " +
-    "back, captured, transformed, and returned to physical form. Assumes " +
+    "A studio course: matter crosses from physical to digital and back — " +
+    "captured, computed, and returned to physical form or effect. Assumes " +
     "prior depth in either studio-art practice or programming, not both, " +
     "and cross-trains whichever half you lack. A studio/crit, not a " +
     "lecture course.",
