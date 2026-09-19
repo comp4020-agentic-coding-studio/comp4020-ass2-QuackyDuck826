@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder screenshot of a simple arcade-style browser game with a canvas, a blocky sprite character, obstacles, and a score readout">
+  <rect width="800" height="500" fill="#f4ead9"/>
+
+  <!-- canvas frame -->
+  <rect x="30" y="30" width="740" height="440" fill="#14100a"/>
+
+  <!-- ground line inside canvas -->
+  <rect x="30" y="400" width="740" height="70" fill="#3f2a12"/>
+
+  <!-- sprite character, simple blocky shape -->
+  <g>
+    <rect x="120" y="330" width="46" height="70" fill="#b97d1c"/>
+    <rect x="128" y="308" width="30" height="26" fill="#e7c98f"/>
+    <rect x="120" y="400" width="14" height="20" fill="#5c3d16"/>
+    <rect x="152" y="400" width="14" height="20" fill="#5c3d16"/>
+  </g>
+
+  <!-- obstacles -->
+  <g fill="#8a5a20">
+    <rect x="340" y="350" width="40" height="50"/>
+    <rect x="420" y="330" width="40" height="70"/>
+    <rect x="560" y="360" width="40" height="40"/>
+  </g>
+
+  <!-- collectible -->
+  <circle cx="640" cy="200" r="14" fill="#e7c98f"/>
+
+  <!-- score / UI readout -->
+  <g>
+    <rect x="50" y="50" width="150" height="42" rx="6" fill="#f4ead9" opacity="0.9"/>
+    <text x="66" y="78" font-family="monospace" font-size="20" fill="#3f2a12">SCORE 0130</text>
+  </g>
+
+  <text x="400" y="490" font-family="sans-serif" font-size="18" fill="#8a5a20" text-anchor="middle">placeholder — small arcade-style browser game</text>
+</svg>
