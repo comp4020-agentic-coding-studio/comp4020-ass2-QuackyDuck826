@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder photo of a dark installation room where a projected glowing shape on the floor follows the position of a visitor's silhouette" >
+  <rect width="800" height="500" fill="#14100a"/>
+
+  <!-- floor -->
+  <rect x="0" y="360" width="800" height="140" fill="#3f2a12"/>
+
+  <!-- projector, top corner -->
+  <rect x="60" y="40" width="46" height="30" rx="4" fill="#5c3d16"/>
+  <circle cx="66" cy="55" r="6" fill="#e7c98f"/>
+  <polygon points="100,55 500,60 560,400 260,400" fill="#f4ead9" opacity="0.05"/>
+
+  <!-- projected glowing shape on the floor, near the visitor -->
+  <ellipse cx="560" cy="420" rx="90" ry="34" fill="#b97d1c" opacity="0.7"/>
+  <ellipse cx="560" cy="420" rx="140" ry="50" fill="#b97d1c" opacity="0.25"/>
+
+  <!-- visitor silhouette standing on the projected shape -->
+  <g fill="#14100a">
+    <ellipse cx="560" cy="330" rx="28" ry="60"/>
+    <circle cx="560" cy="255" r="22"/>
+  </g>
+  <ellipse cx="560" cy="420" rx="40" ry="12" fill="#14100a" opacity="0.6"/>
+
+  <!-- motion trail showing the projection having followed from an earlier position -->
+  <ellipse cx="320" cy="410" rx="70" ry="26" fill="#8a5a20" opacity="0.18"/>
+  <ellipse cx="220" cy="400" rx="60" ry="22" fill="#8a5a20" opacity="0.1"/>
+  <path d="M240,400 Q400,410 540,418" stroke="#e7c98f" stroke-width="3" stroke-dasharray="6 8" opacity="0.5" fill="none"/>
+
+  <text x="400" y="470" font-family="sans-serif" font-size="18" fill="#e7c98f" text-anchor="middle">placeholder — a projection tracking a visitor across the floor</text>
+</svg>

@@ -7,6 +7,7 @@ week: 7
 date: 2027-04-12
 teachers:
   - idris-fenn
+slides: /decks/week-07/
 related:
   - sessions/studio-brief-2-crit
   - assessments/studio-brief-2

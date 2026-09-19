@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder photo of an interactive floor panel made of a grid of tiles, with the tiles nearest a person's feet lit while the rest stay dark" >
+  <rect width="800" height="500" fill="#14100a"/>
+
+  <!-- grid of floor tiles -->
+  <g>
+    <rect x="40" y="60" width="140" height="140" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+    <rect x="190" y="60" width="140" height="140" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+    <rect x="340" y="60" width="140" height="140" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+    <rect x="490" y="60" width="140" height="140" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+    <rect x="640" y="60" width="120" height="140" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+
+    <rect x="40" y="210" width="140" height="140" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+    <rect x="190" y="210" width="140" height="140" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+    <rect x="340" y="210" width="140" height="140" fill="#b97d1c" stroke="#e7c98f" stroke-width="3"/>
+    <rect x="490" y="210" width="140" height="140" fill="#b97d1c" stroke="#e7c98f" stroke-width="3"/>
+    <rect x="640" y="210" width="120" height="140" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+
+    <rect x="40" y="360" width="140" height="120" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+    <rect x="190" y="360" width="140" height="120" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+    <rect x="340" y="360" width="140" height="120" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+    <rect x="490" y="360" width="140" height="120" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+    <rect x="640" y="360" width="120" height="120" fill="#3f2a12" stroke="#5c3d16" stroke-width="3"/>
+  </g>
+
+  <!-- glow radiating from the lit tiles -->
+  <ellipse cx="480" cy="280" rx="180" ry="110" fill="#e7c98f" opacity="0.18"/>
+
+  <!-- feet standing on the lit tiles -->
+  <ellipse cx="440" cy="320" rx="20" ry="12" fill="#f4ead9"/>
+  <ellipse cx="500" cy="320" rx="20" ry="12" fill="#f4ead9"/>
+
+  <text x="400" y="470" font-family="sans-serif" font-size="18" fill="#e7c98f" text-anchor="middle" transform="translate(0,10)">placeholder — floor tiles lighting where motion is detected</text>
+</svg>

@@ -1,0 +1,82 @@
+---
+title: "Round Trip — Week 8"
+description: Composing state machines into a small rule system
+---
+
+{/* _class: impact */}
+
+# Rules
+
+Several pieces of state, interacting under a consistent set of rules
+
+---
+
+## Recap
+
+- last week's state machine composes into something larger: a small rule
+  system or game-engine loop
+- the loop has one shape every tick — an update step, then a render step
+- the line between "a system with rules" and "a scripted sequence" matters
+  for how your final project is judged
+- studio time today: extend a rule system with one interaction of your own
+
+---
+
+## The game-loop shape, step by step
+
+1. Run one loop, forever, ticking at a steady rate rather than reacting
+   only when something happens.
+2. On every tick, run the update step first: advance every piece of
+   state by one step, including any state machines from last week.
+3. Keep the render step strictly separate and second: it only reads
+   state to decide what to draw or output, never changes it. Letting
+   render code change state is how bugs start depending on drawing order
+   instead of your rules.
+4. Compose several small, independent pieces of state side by side rather
+   than growing one state machine to do everything — a rule system is
+   built from parts that interact, not from one part rewritten to cope.
+
+---
+
+## Adding one interaction, step by step
+
+1. Pick one interaction small enough to build in a session, that changes
+   how two existing pieces of state affect each other — a collision, a
+   trigger, a condition that only matters when two other things are true.
+2. Give the interaction its own state, and change that state only in the
+   update step, alongside the states already running.
+3. Let it read other state machines' state rather than reach in and
+   change it directly — reaching in and changing another machine's
+   internals is usually a sign the boundary is wrong.
+4. Check your result against the "rules vs. scripted sequence" line: a
+   scripted sequence plays a fixed order back regardless of state; a rule
+   system produces combinations you didn't explicitly author.
+
+---
+
+## What this can build toward: a small rule-driven ecosystem
+
+![bg right:45%](./assets/week-08/rule-ecosystem.svg)
+
+A handful of simple agents — predators, prey, particles — each running
+its own small state machine, producing group behaviour none of them was
+individually scripted to perform.
+
+---
+
+## What this can build toward: a simple physics-driven level
+
+![bg right:45%](./assets/week-08/rule-level.svg)
+
+A small rule-based game level where collision and simple physics are the
+rules, and the interesting behaviour — a ball knocking a switch, a switch
+opening a gate — is the composition, not any single scripted moment.
+
+---
+
+{/* _class: banner */}
+
+## Next week
+
+Complex Physical Media I — camera-based vision and tracking, and the Final
+Planning & Ideation crit

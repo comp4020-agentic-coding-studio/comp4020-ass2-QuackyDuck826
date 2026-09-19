@@ -1,0 +1,70 @@
+---
+title: "Round Trip — Week 9"
+description: Camera-based tracking as a continuous form of digitizing
+---
+
+{/* _class: impact */}
+
+# Tracking
+
+A camera feed, watched live, rather than a single photo taken once
+
+---
+
+## Recap
+
+- a tracking pipeline captures continuous position and motion, not one
+  static shape the way weeks 1–2's scanning did
+- the round-trip pillar turns its final corner: physical media, but live
+  rather than captured once
+- tracked input is designed to feed straight into the state machines and
+  rule systems from weeks 7–8
+- today's crit is Final Planning & Ideation — pitching the final's theme
+  and technique combination
+
+---
+
+## Turning a camera feed into a usable signal, step by step
+
+1. Start from a live feed rather than a single photo — every frame is a
+   new capture, arriving continuously instead of once.
+2. Isolate what you actually want to track from the background: simple
+   motion or frame-differencing to find what changed between two frames,
+   or colour/blob tracking to find a particular hue or shape.
+3. Reduce that isolated region to a small continuous number stream — an
+   x/y position, a size, a count — the same way a sensor reading from
+   week 4 was a number your code could use.
+4. Smooth or threshold that stream so noise between frames doesn't read
+   as a state change on its own.
+5. Feed the resulting stream into a state machine or rule system from
+   weeks 7–8 exactly as if it were a sensor: transitions triggered by
+   what the camera now sees, not what a button reports.
+
+---
+
+## What this can build toward: a projection that follows a visitor
+
+![bg right:45%](./assets/week-09/following-projection.svg)
+
+A projected shape or pattern whose position is driven directly by a
+tracked visitor's position in the room — the tracked x/y stream from
+today, updated every frame, is the entire input.
+
+---
+
+## What this can build toward: a floor or wall triggered by presence
+
+![bg right:45%](./assets/week-09/presence-trigger.svg)
+
+An interactive floor or wall panel whose rule system changes state when
+motion is detected in a region — the same debounced, edge-detected
+transition logic from week 7, fed by a camera instead of a button.
+
+---
+
+{/* _class: banner */}
+
+## Next week
+
+Complex Physical Media II — fabrication: 3D printing and laser cutting close
+the loop back to physical form
