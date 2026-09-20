@@ -55,7 +55,7 @@ Derivation formula — `tint(base, t)` = mix `base` with white by fraction `t`;
 | primary-tint-80     | tint(primary, .8)    | `#f0e2cd` | soft badge/pot fill                     |
 | secondary-shade-35  | shade(secondary, .35)| `#5a3c0c` | mid ink (line work, shadow)             |
 | secondary-shade-70  | shade(secondary, .7) | `#291c06` | near-black ink (outlines)               |
-| accent-tint-70      | tint(accent, .7)     | `#bbcdea` | pale blue highlight (digital/signal)    |
+| accent-tint-70      | tint(accent, .7)     | `#bbcdea` | pale blue highlight (digital/signal); avatar pot fill |
 | accent-shade-30     | shade(accent, .3)    | `#143e82` | deep blue ink                           |
 
 `#ffffff` stays available unmixed as a neutral optical highlight (opacity-
