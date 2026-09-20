@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder illustration of a kinetic sculpture with a hidden motor, its arms shown mid-motion with motion lines suggesting sensor-driven movement rather than a fixed loop">
-  <rect width="800" height="500" fill="#14100a"/>
+  <rect width="800" height="500" fill="#291c06"/>
 
   <!-- plinth -->
-  <rect x="330" y="420" width="140" height="60" fill="#3f2a12"/>
+  <rect x="330" y="420" width="140" height="60" fill="#5a3c0c"/>
 
   <!-- hidden motor housing inside the base -->
-  <circle cx="400" cy="420" r="26" fill="#5c3d16"/>
+  <circle cx="400" cy="420" r="26" fill="#5a3c0c"/>
 
   <!-- sculpture arms, mid-swing -->
   <g stroke="#b97d1c" stroke-width="14" stroke-linecap="round" fill="none">
@@ -15,7 +15,7 @@
   </g>
 
   <!-- motion arcs suggesting variable, sensor-driven movement -->
-  <g stroke="#8a5a20" stroke-width="3" fill="none" opacity="0.7">
+  <g stroke="#8a5c13" stroke-width="3" fill="none" opacity="0.7">
     <path d="M280,300 A140,140 0 0,1 340,200"/>
     <path d="M500,260 A160,160 0 0,0 560,340"/>
   </g>
@@ -25,5 +25,5 @@
   <circle cx="500" cy="260" r="12" fill="#f4ead9"/>
   <circle cx="440" cy="180" r="12" fill="#f4ead9"/>
 
-  <text x="400" y="470" font-family="sans-serif" font-size="18" fill="#e7c98f" text-anchor="middle">placeholder — kinetic sculpture driven by a sensor, not a fixed motion</text>
+  <text x="400" y="470" font-family="sans-serif" font-size="18" fill="#e3cba4" text-anchor="middle">placeholder — kinetic sculpture driven by a sensor, not a fixed motion</text>
 </svg>

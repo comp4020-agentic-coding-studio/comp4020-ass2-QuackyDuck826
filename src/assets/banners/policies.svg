@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="400" viewBox="0 0 1600 400" role="img" aria-hidden="true">
   <defs>
-    <pattern id="rules" width="40" height="40" patternUnits="userSpaceOnUse">
-      <rect width="40" height="40" fill="#f4ead9" />
-      <rect x="0" y="18" width="40" height="4" fill="#b97d1c" />
+    <pattern id="lattice" width="60" height="120" patternUnits="userSpaceOnUse">
+      <rect width="60" height="120" fill="#f4ead9" />
+      <path d="M0 0 L60 60 M60 0 L0 60" stroke="#b97d1c" stroke-width="6" stroke-linecap="round" />
+      <path d="M0 60 L60 120 M60 60 L0 120" stroke="#1c58b9" stroke-width="6" stroke-linecap="round" />
     </pattern>
   </defs>
   <rect width="1600" height="400" fill="#f4ead9" />
-  <rect width="1600" height="400" fill="url(#rules)" opacity="0.55" />
+  <rect width="1600" height="400" fill="url(#lattice)" opacity="0.55" />
 </svg>

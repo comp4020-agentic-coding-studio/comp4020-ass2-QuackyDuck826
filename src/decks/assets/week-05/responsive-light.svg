@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder illustration of a wall installation of LED panels, one brightly lit and fading across the row, following a sensor reading">
-  <rect width="800" height="500" fill="#14100a"/>
+  <rect width="800" height="500" fill="#291c06"/>
 
   <!-- wall -->
-  <rect x="0" y="0" width="800" height="500" fill="#1c1610"/>
+  <rect x="0" y="0" width="800" height="500" fill="#291c06"/>
 
   <!-- row of LED panels with varying brightness -->
   <g>
-    <rect x="120" y="180" width="80" height="140" rx="8" fill="#3f2a12"/>
-    <rect x="230" y="160" width="80" height="180" rx="8" fill="#5c3d16"/>
-    <rect x="340" y="140" width="80" height="220" rx="8" fill="#8a5a20"/>
+    <rect x="120" y="180" width="80" height="140" rx="8" fill="#5a3c0c"/>
+    <rect x="230" y="160" width="80" height="180" rx="8" fill="#5a3c0c"/>
+    <rect x="340" y="140" width="80" height="220" rx="8" fill="#8a5c13"/>
     <rect x="450" y="120" width="80" height="260" rx="8" fill="#b97d1c"/>
-    <rect x="560" y="100" width="80" height="300" rx="8" fill="#e7c98f"/>
+    <rect x="560" y="100" width="80" height="300" rx="8" fill="#bbcdea"/>
   </g>
 
   <!-- glow around the brightest panel -->
@@ -18,9 +18,9 @@
 
   <!-- small sensor module mounted at the end of the row -->
   <g>
-    <rect x="670" y="220" width="30" height="30" rx="6" fill="#3f2a12"/>
-    <circle cx="685" cy="235" r="8" fill="#e7c98f"/>
+    <rect x="670" y="220" width="30" height="30" rx="6" fill="#5a3c0c"/>
+    <circle cx="685" cy="235" r="8" fill="#bbcdea"/>
   </g>
 
-  <text x="400" y="460" font-family="sans-serif" font-size="18" fill="#e7c98f" text-anchor="middle">placeholder — LED brightness following a sensor reading</text>
+  <text x="400" y="460" font-family="sans-serif" font-size="18" fill="#bbcdea" text-anchor="middle">placeholder — LED brightness following a sensor reading</text>
 </svg>

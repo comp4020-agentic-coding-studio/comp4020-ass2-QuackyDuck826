@@ -9,29 +9,29 @@
   <rect width="800" height="500" fill="#f4ead9"/>
 
   <!-- sky -->
-  <rect width="800" height="320" fill="#e7c98f" filter="url(#brush)"/>
+  <rect width="800" height="320" fill="#e3cba4" filter="url(#brush)"/>
   <circle cx="660" cy="90" r="55" fill="#b97d1c" filter="url(#brush)"/>
 
   <!-- distant hills, painterly overlapping blobs -->
-  <path d="M0,300 Q120,220 260,290 Q400,230 560,300 Q680,240 800,290 L800,340 L0,340 Z" fill="#8a5a20" filter="url(#brush)"/>
-  <path d="M0,330 Q160,270 320,320 Q480,260 640,320 Q740,280 800,320 L800,380 L0,380 Z" fill="#5c3d16" filter="url(#brush)"/>
+  <path d="M0,300 Q120,220 260,290 Q400,230 560,300 Q680,240 800,290 L800,340 L0,340 Z" fill="#8a5c13" filter="url(#brush)"/>
+  <path d="M0,330 Q160,270 320,320 Q480,260 640,320 Q740,280 800,320 L800,380 L0,380 Z" fill="#5a3c0c" filter="url(#brush)"/>
 
   <!-- ground -->
-  <rect x="0" y="340" width="800" height="160" fill="#3f2a12" filter="url(#brush)"/>
+  <rect x="0" y="340" width="800" height="160" fill="#5a3c0c" filter="url(#brush)"/>
 
   <!-- character sprite, simple painted figure -->
   <g filter="url(#brush)">
     <ellipse cx="230" cy="370" rx="26" ry="34" fill="#f4ead9"/>
-    <circle cx="230" cy="322" r="20" fill="#e7c98f"/>
+    <circle cx="230" cy="322" r="20" fill="#e3cba4"/>
     <rect x="214" y="370" width="14" height="46" fill="#b97d1c"/>
-    <rect x="238" y="370" width="14" height="46" fill="#8a5a20"/>
+    <rect x="238" y="370" width="14" height="46" fill="#8a5c13"/>
   </g>
 
   <!-- score / UI readout -->
   <g>
-    <rect x="24" y="24" width="150" height="42" rx="6" fill="#3f2a12" opacity="0.85"/>
+    <rect x="24" y="24" width="150" height="42" rx="6" fill="#5a3c0c" opacity="0.85"/>
     <text x="40" y="52" font-family="monospace" font-size="20" fill="#f4ead9">SCORE 0420</text>
   </g>
 
-  <text x="400" y="470" font-family="sans-serif" font-size="18" fill="#8a5a20" text-anchor="middle">placeholder — hand-painted game graphics</text>
+  <text x="400" y="470" font-family="sans-serif" font-size="18" fill="#8a5c13" text-anchor="middle">placeholder — hand-painted game graphics</text>
 </svg>

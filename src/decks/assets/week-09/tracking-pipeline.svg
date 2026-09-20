@@ -1,51 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder diagram of a four-stage tracking pipeline: a raw camera frame, an isolated motion or colour region, a reduced x/y and size number stream, and a state machine or rule system consuming that stream">
-  <rect width="800" height="500" fill="#14100a"/>
+  <rect width="800" height="500" fill="#291c06"/>
 
   <!-- connecting arrows between the four stages -->
-  <g stroke="#e7c98f" stroke-width="4" fill="none" opacity="0.7">
+  <g stroke="#bbcdea" stroke-width="4" fill="none" opacity="0.7">
     <path d="M182,250 L223,250" marker-end="url(#arrow)"/>
     <path d="M387,250 L428,250" marker-end="url(#arrow)"/>
     <path d="M592,250 L633,250" marker-end="url(#arrow)"/>
   </g>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#e7c98f"/>
+      <path d="M0,0 L10,5 L0,10 z" fill="#bbcdea"/>
     </marker>
   </defs>
 
   <!-- stage 1: raw camera frame -->
-  <rect x="20" y="150" width="160" height="200" rx="10" fill="#3f2a12"/>
-  <rect x="40" y="175" width="120" height="90" rx="4" fill="#5c3d16"/>
-  <circle cx="100" cy="220" r="26" fill="#14100a"/>
-  <circle cx="100" cy="220" r="14" fill="#8a5a20"/>
-  <circle cx="52" cy="185" r="3" fill="#e7c98f" opacity="0.6"/>
-  <circle cx="145" cy="255" r="3" fill="#e7c98f" opacity="0.6"/>
-  <circle cx="130" cy="185" r="3" fill="#e7c98f" opacity="0.4"/>
-  <text x="100" y="300" font-family="sans-serif" font-size="15" fill="#e7c98f" text-anchor="middle">raw frame</text>
+  <rect x="20" y="150" width="160" height="200" rx="10" fill="#5a3c0c"/>
+  <rect x="40" y="175" width="120" height="90" rx="4" fill="#5a3c0c"/>
+  <circle cx="100" cy="220" r="26" fill="#291c06"/>
+  <circle cx="100" cy="220" r="14" fill="#8a5c13"/>
+  <circle cx="52" cy="185" r="3" fill="#bbcdea" opacity="0.6"/>
+  <circle cx="145" cy="255" r="3" fill="#bbcdea" opacity="0.6"/>
+  <circle cx="130" cy="185" r="3" fill="#bbcdea" opacity="0.4"/>
+  <text x="100" y="300" font-family="sans-serif" font-size="15" fill="#bbcdea" text-anchor="middle">raw frame</text>
 
   <!-- stage 2: isolate (motion / colour) -->
-  <rect x="225" y="150" width="160" height="200" rx="10" fill="#3f2a12"/>
-  <rect x="245" y="175" width="120" height="90" rx="4" fill="#5c3d16" opacity="0.5"/>
+  <rect x="225" y="150" width="160" height="200" rx="10" fill="#5a3c0c"/>
+  <rect x="245" y="175" width="120" height="90" rx="4" fill="#5a3c0c" opacity="0.5"/>
   <ellipse cx="305" cy="220" rx="30" ry="24" fill="#b97d1c"/>
   <rect x="245" y="175" width="120" height="90" rx="4" fill="none" stroke="#f4ead9" stroke-width="2" stroke-dasharray="6 5"/>
-  <text x="305" y="300" font-family="sans-serif" font-size="15" fill="#e7c98f" text-anchor="middle">isolate</text>
+  <text x="305" y="300" font-family="sans-serif" font-size="15" fill="#bbcdea" text-anchor="middle">isolate</text>
 
   <!-- stage 3: number stream -->
-  <rect x="430" y="150" width="160" height="200" rx="10" fill="#3f2a12"/>
+  <rect x="430" y="150" width="160" height="200" rx="10" fill="#5a3c0c"/>
   <text x="510" y="210" font-family="monospace" font-size="17" fill="#f4ead9" text-anchor="middle">x: 214</text>
   <text x="510" y="235" font-family="monospace" font-size="17" fill="#f4ead9" text-anchor="middle">y: 88</text>
   <text x="510" y="260" font-family="monospace" font-size="17" fill="#f4ead9" text-anchor="middle">size: 42</text>
-  <text x="510" y="300" font-family="sans-serif" font-size="15" fill="#e7c98f" text-anchor="middle">number stream</text>
+  <text x="510" y="300" font-family="sans-serif" font-size="15" fill="#bbcdea" text-anchor="middle">number stream</text>
 
   <!-- stage 4: state machine / rule system -->
-  <rect x="635" y="150" width="160" height="200" rx="10" fill="#3f2a12"/>
-  <circle cx="680" cy="200" r="20" fill="#5c3d16"/>
+  <rect x="635" y="150" width="160" height="200" rx="10" fill="#5a3c0c"/>
+  <circle cx="680" cy="200" r="20" fill="#5a3c0c"/>
   <circle cx="740" cy="200" r="20" fill="#b97d1c"/>
-  <circle cx="710" cy="255" r="20" fill="#5c3d16"/>
+  <circle cx="710" cy="255" r="20" fill="#5a3c0c"/>
   <path d="M698,200 L722,200" stroke="#f4ead9" stroke-width="3" opacity="0.7"/>
   <path d="M730,216 L718,240" stroke="#f4ead9" stroke-width="3" opacity="0.7"/>
   <path d="M694,240 L688,216" stroke="#f4ead9" stroke-width="3" opacity="0.7"/>
-  <text x="715" y="300" font-family="sans-serif" font-size="15" fill="#e7c98f" text-anchor="middle">state machine</text>
+  <text x="715" y="300" font-family="sans-serif" font-size="15" fill="#bbcdea" text-anchor="middle">state machine</text>
 
-  <text x="400" y="470" font-family="sans-serif" font-size="18" fill="#e7c98f" text-anchor="middle">placeholder — camera frame reduced to a number stream, fed into a state machine</text>
+  <text x="400" y="470" font-family="sans-serif" font-size="18" fill="#bbcdea" text-anchor="middle">placeholder — camera frame reduced to a number stream, fed into a state machine</text>
 </svg>

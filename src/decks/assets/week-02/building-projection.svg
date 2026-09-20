@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Placeholder illustration of a building facade at night with a computed geometric light pattern projection-mapped onto its windows and ledges, a projector visible in the foreground, as a public art piece">
-  <rect width="800" height="500" fill="#14100a"/>
+  <rect width="800" height="500" fill="#291c06"/>
 
   <!-- night sky, a few flat stars -->
   <circle cx="90" cy="60" r="3" fill="#f4ead9" opacity="0.6"/>
@@ -7,14 +7,14 @@
   <circle cx="680" cy="70" r="2.5" fill="#f4ead9" opacity="0.5"/>
 
   <!-- building facade, flat undecorated mass -->
-  <rect x="220" y="60" width="380" height="400" fill="#3f2a12"/>
+  <rect x="220" y="60" width="380" height="400" fill="#5a3c0c"/>
 
   <!-- ledges -->
-  <rect x="210" y="180" width="400" height="10" fill="#5c3d16"/>
-  <rect x="210" y="320" width="400" height="10" fill="#5c3d16"/>
+  <rect x="210" y="180" width="400" height="10" fill="#5a3c0c"/>
+  <rect x="210" y="320" width="400" height="10" fill="#5a3c0c"/>
 
   <!-- window grid -->
-  <g fill="#8a5a20">
+  <g fill="#8a5c13">
     <rect x="250" y="90" width="36" height="50"/>
     <rect x="310" y="90" width="36" height="50"/>
     <rect x="370" y="90" width="36" height="50"/>
@@ -40,22 +40,22 @@
   <!-- computed light pattern, registered to the facade's own geometry -->
   <g opacity="0.85">
     <polygon points="220,60 410,60 300,180 220,180" fill="#b97d1c"/>
-    <polygon points="410,60 600,60 600,180 480,180" fill="#e7c98f"/>
-    <polygon points="220,320 410,320 410,460 220,460" fill="#5c3d16" opacity="0.5"/>
+    <polygon points="410,60 600,60 600,180 480,180" fill="#bbcdea"/>
+    <polygon points="220,320 410,320 410,460 220,460" fill="#5a3c0c" opacity="0.5"/>
     <polygon points="410,320 600,320 520,460 410,460" fill="#f4ead9" opacity="0.6"/>
     <circle cx="410" cy="250" r="60" fill="#b97d1c" opacity="0.7"/>
   </g>
 
   <!-- ground -->
-  <rect x="0" y="460" width="800" height="40" fill="#0a0805"/>
+  <rect x="0" y="460" width="800" height="40" fill="#291c06"/>
 
   <!-- projector on a stand, foreground -->
   <g>
-    <rect x="60" y="410" width="6" height="50" fill="#5c3d16"/>
-    <rect x="30" y="392" width="70" height="30" rx="4" fill="#3f2a12"/>
-    <circle cx="95" cy="407" r="6" fill="#e7c98f"/>
+    <rect x="60" y="410" width="6" height="50" fill="#5a3c0c"/>
+    <rect x="30" y="392" width="70" height="30" rx="4" fill="#5a3c0c"/>
+    <circle cx="95" cy="407" r="6" fill="#bbcdea"/>
     <polygon points="101,407 220,150 220,290" fill="#f4ead9" opacity="0.06"/>
   </g>
 
-  <text x="400" y="30" font-family="sans-serif" font-size="18" fill="#e7c98f" text-anchor="middle">placeholder — projection mapped onto a building facade</text>
+  <text x="400" y="30" font-family="sans-serif" font-size="18" fill="#bbcdea" text-anchor="middle">placeholder — projection mapped onto a building facade</text>
 </svg>

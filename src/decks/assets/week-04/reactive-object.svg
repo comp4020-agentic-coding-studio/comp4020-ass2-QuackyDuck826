@@ -2,13 +2,13 @@
   <rect width="800" height="500" fill="#f4ead9"/>
 
   <!-- tabletop -->
-  <rect x="0" y="360" width="800" height="140" fill="#8a5a20"/>
+  <rect x="0" y="360" width="800" height="140" fill="#8a5c13"/>
 
   <!-- ambient light sensor mounted nearby -->
   <g>
-    <rect x="560" y="220" width="20" height="140" fill="#5c3d16"/>
-    <circle cx="570" cy="210" r="18" fill="#3f2a12"/>
-    <circle cx="570" cy="210" r="8" fill="#e7c98f"/>
+    <rect x="560" y="220" width="20" height="140" fill="#5a3c0c"/>
+    <circle cx="570" cy="210" r="18" fill="#5a3c0c"/>
+    <circle cx="570" cy="210" r="8" fill="#bbcdea"/>
   </g>
 
   <!-- light rays hitting the sensor -->
@@ -20,18 +20,18 @@
 
   <!-- the reactive object itself, three panels showing a colour gradient response -->
   <g>
-    <rect x="180" y="240" width="90" height="120" rx="10" fill="#3f2a12"/>
-    <rect x="290" y="220" width="90" height="140" rx="10" fill="#8a5a20"/>
-    <rect x="400" y="200" width="90" height="160" rx="10" fill="#e7c98f"/>
+    <rect x="180" y="240" width="90" height="120" rx="10" fill="#5a3c0c"/>
+    <rect x="290" y="220" width="90" height="140" rx="10" fill="#8a5c13"/>
+    <rect x="400" y="200" width="90" height="160" rx="10" fill="#bbcdea"/>
   </g>
 
   <!-- arrow suggesting the sensor drives the object's state -->
-  <path d="M540,270 Q460,270 400,270" fill="none" stroke="#3f2a12" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <path d="M540,270 Q460,270 400,270" fill="none" stroke="#5a3c0c" stroke-width="4" marker-end="url(#arrowhead)"/>
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#3f2a12"/>
+      <path d="M0,0 L6,3 L0,6 Z" fill="#5a3c0c"/>
     </marker>
   </defs>
 
-  <text x="400" y="460" font-family="sans-serif" font-size="18" fill="#8a5a20" text-anchor="middle">placeholder — a sensor reading driving a subtle visible change</text>
+  <text x="400" y="460" font-family="sans-serif" font-size="18" fill="#8a5c13" text-anchor="middle">placeholder — a sensor reading driving a subtle visible change</text>
 </svg>

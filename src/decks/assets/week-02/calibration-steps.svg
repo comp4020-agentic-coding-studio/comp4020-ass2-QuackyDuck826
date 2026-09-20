@@ -2,10 +2,10 @@
   <rect width="800" height="500" fill="#f4ead9"/>
 
   <!-- divider -->
-  <line x1="400" y1="20" x2="400" y2="460" stroke="#8a5a20" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="400" y1="20" x2="400" y2="460" stroke="#8a5c13" stroke-width="2" stroke-dasharray="6 6"/>
 
   <!-- LEFT: corners first -->
-  <text x="200" y="46" font-family="sans-serif" font-size="20" fill="#3f2a12" text-anchor="middle" font-weight="bold">Corners first</text>
+  <text x="200" y="46" font-family="sans-serif" font-size="20" fill="#5a3c0c" text-anchor="middle" font-weight="bold">Corners first</text>
 
   <defs>
     <clipPath id="objRight">
@@ -14,37 +14,37 @@
   </defs>
 
   <!-- pedestal -->
-  <rect x="150" y="413" width="100" height="15" rx="3" fill="#8a5a20"/>
+  <rect x="150" y="413" width="100" height="15" rx="3" fill="#8a5c13"/>
 
   <!-- object: a curved body with one angled facet -->
-  <path d="M200,190 C235,190 255,205 260,240 L270,320 C272,360 250,390 230,400 C200,412 180,410 170,400 C145,390 135,355 140,320 C130,280 150,230 170,200 Z" fill="#5c3d16"/>
+  <path d="M200,190 C235,190 255,205 260,240 L270,320 C272,360 250,390 230,400 C200,412 180,410 170,400 C145,390 135,355 140,320 C130,280 150,230 170,200 Z" fill="#5a3c0c"/>
   <!-- angled facet highlight -->
-  <line x1="260" y1="240" x2="270" y2="320" stroke="#8a5a20" stroke-width="3"/>
+  <line x1="260" y1="240" x2="270" y2="320" stroke="#8a5c13" stroke-width="3"/>
 
   <!-- rough rectangle overlay: matches corners, not the curve -->
   <rect x="135" y="188" width="135" height="225" fill="#b97d1c" opacity="0.25" stroke="#b97d1c" stroke-width="2" stroke-dasharray="6 6"/>
-  <circle cx="135" cy="188" r="6" fill="#e7c98f" stroke="#3f2a12" stroke-width="1.5"/>
-  <circle cx="270" cy="188" r="6" fill="#e7c98f" stroke="#3f2a12" stroke-width="1.5"/>
-  <circle cx="135" cy="413" r="6" fill="#e7c98f" stroke="#3f2a12" stroke-width="1.5"/>
-  <circle cx="270" cy="413" r="6" fill="#e7c98f" stroke="#3f2a12" stroke-width="1.5"/>
+  <circle cx="135" cy="188" r="6" fill="#e3cba4" stroke="#5a3c0c" stroke-width="1.5"/>
+  <circle cx="270" cy="188" r="6" fill="#e3cba4" stroke="#5a3c0c" stroke-width="1.5"/>
+  <circle cx="135" cy="413" r="6" fill="#e3cba4" stroke="#5a3c0c" stroke-width="1.5"/>
+  <circle cx="270" cy="413" r="6" fill="#e3cba4" stroke="#5a3c0c" stroke-width="1.5"/>
 
   <!-- RIGHT: curves and angles second -->
-  <text x="600" y="46" font-family="sans-serif" font-size="20" fill="#3f2a12" text-anchor="middle" font-weight="bold">Curves and angles second</text>
+  <text x="600" y="46" font-family="sans-serif" font-size="20" fill="#5a3c0c" text-anchor="middle" font-weight="bold">Curves and angles second</text>
 
   <!-- pedestal -->
-  <rect x="550" y="413" width="100" height="15" rx="3" fill="#8a5a20"/>
+  <rect x="550" y="413" width="100" height="15" rx="3" fill="#8a5c13"/>
 
   <!-- object with pattern warped to follow it exactly -->
   <g clip-path="url(#objRight)">
-    <rect x="520" y="170" width="180" height="260" fill="#5c3d16"/>
+    <rect x="520" y="170" width="180" height="260" fill="#5a3c0c"/>
     <rect x="530" y="170" width="15" height="260" fill="#b97d1c" opacity="0.85"/>
-    <rect x="560" y="170" width="15" height="260" fill="#e7c98f" opacity="0.85"/>
+    <rect x="560" y="170" width="15" height="260" fill="#e3cba4" opacity="0.85"/>
     <rect x="590" y="170" width="15" height="260" fill="#b97d1c" opacity="0.85"/>
-    <rect x="620" y="170" width="15" height="260" fill="#e7c98f" opacity="0.85"/>
+    <rect x="620" y="170" width="15" height="260" fill="#e3cba4" opacity="0.85"/>
     <rect x="650" y="170" width="15" height="260" fill="#b97d1c" opacity="0.85"/>
-    <rect x="680" y="170" width="15" height="260" fill="#e7c98f" opacity="0.85"/>
+    <rect x="680" y="170" width="15" height="260" fill="#e3cba4" opacity="0.85"/>
   </g>
-  <path d="M600,190 C635,190 655,205 660,240 L670,320 C672,360 650,390 630,400 C600,412 580,410 570,400 C545,390 535,355 540,320 C530,280 550,230 570,200 Z" fill="none" stroke="#3f2a12" stroke-width="2"/>
+  <path d="M600,190 C635,190 655,205 660,240 L670,320 C672,360 650,390 630,400 C600,412 580,410 570,400 C545,390 535,355 540,320 C530,280 550,230 570,200 Z" fill="none" stroke="#5a3c0c" stroke-width="2"/>
 
-  <text x="400" y="480" font-family="sans-serif" font-size="18" fill="#8a5a20" text-anchor="middle">placeholder — calibrating a projection: corners first, then curves and angles</text>
+  <text x="400" y="480" font-family="sans-serif" font-size="18" fill="#8a5c13" text-anchor="middle">placeholder — calibrating a projection: corners first, then curves and angles</text>
 </svg>

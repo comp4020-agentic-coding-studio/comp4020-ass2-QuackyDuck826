@@ -5,36 +5,36 @@
     </clipPath>
   </defs>
 
-  <rect width="800" height="500" fill="#14100a"/>
+  <rect width="800" height="500" fill="#291c06"/>
 
   <!-- stage floor -->
-  <rect x="0" y="430" width="800" height="70" fill="#0a0805"/>
+  <rect x="0" y="430" width="800" height="70" fill="#291c06"/>
 
   <!-- soft stage spotlight glow -->
   <ellipse cx="400" cy="260" rx="260" ry="240" fill="#f4ead9" opacity="0.05"/>
 
   <!-- stand -->
-  <rect x="392" y="400" width="16" height="60" fill="#3f2a12"/>
-  <ellipse cx="400" cy="462" rx="70" ry="14" fill="#0a0805"/>
+  <rect x="392" y="400" width="16" height="60" fill="#5a3c0c"/>
+  <ellipse cx="400" cy="462" rx="70" ry="14" fill="#291c06"/>
 
   <!-- mask base geometry, undecorated -->
-  <path d="M400,110 C470,110 520,150 530,210 C540,270 510,320 470,350 C480,380 460,400 430,400 C420,420 380,420 370,400 C340,400 320,380 330,350 C290,320 260,270 270,210 C280,150 330,110 400,110 Z" fill="#3f2a12"/>
+  <path d="M400,110 C470,110 520,150 530,210 C540,270 510,320 470,350 C480,380 460,400 430,400 C420,420 380,420 370,400 C340,400 320,380 330,350 C290,320 260,270 270,210 C280,150 330,110 400,110 Z" fill="#5a3c0c"/>
 
   <!-- projected texture, clipped to the mask's own irregular silhouette -->
   <g clip-path="url(#mask-shape)">
-    <rect x="260" y="100" width="280" height="310" fill="#5c3d16"/>
+    <rect x="260" y="100" width="280" height="310" fill="#5a3c0c"/>
     <rect x="260" y="100" width="90" height="310" fill="#b97d1c"/>
-    <rect x="440" y="100" width="100" height="310" fill="#e7c98f"/>
-    <path d="M260,180 L540,260" stroke="#14100a" stroke-width="8"/>
-    <path d="M260,300 L540,180" stroke="#14100a" stroke-width="8"/>
-    <circle cx="360" cy="230" r="18" fill="#14100a"/>
-    <circle cx="440" cy="230" r="18" fill="#14100a"/>
+    <rect x="440" y="100" width="100" height="310" fill="#bbcdea"/>
+    <path d="M260,180 L540,260" stroke="#291c06" stroke-width="8"/>
+    <path d="M260,300 L540,180" stroke="#291c06" stroke-width="8"/>
+    <circle cx="360" cy="230" r="18" fill="#291c06"/>
+    <circle cx="440" cy="230" r="18" fill="#291c06"/>
   </g>
 
   <!-- projector beam from the wings -->
   <polygon points="700,150 760,150 560,260 500,240" fill="#f4ead9" opacity="0.05"/>
-  <rect x="690" y="132" width="36" height="24" rx="4" fill="#3f2a12"/>
-  <circle cx="695" cy="144" r="4" fill="#e7c98f"/>
+  <rect x="690" y="132" width="36" height="24" rx="4" fill="#5a3c0c"/>
+  <circle cx="695" cy="144" r="4" fill="#bbcdea"/>
 
-  <text x="400" y="40" font-family="sans-serif" font-size="18" fill="#e7c98f" text-anchor="middle">placeholder — texture projection-mapped onto a performance mask</text>
+  <text x="400" y="40" font-family="sans-serif" font-size="18" fill="#bbcdea" text-anchor="middle">placeholder — texture projection-mapped onto a performance mask</text>
 </svg>
