@@ -1,53 +1,19 @@
 # Process overview
 
-<!-- TEMPLATE: this file is a shape to fill in, not a form. Replace everything
-     in it with your own overview, and delete this comment — `pnpm
-     check:evidence` will remind you if it's still here. -->
-
-Written by you, for a reader: how you got from the brief to the harness and
-agentic workflow behind this submission. Markers read this file and follow its
-citations; they don't trawl the repo for evidence you didn't point at.
-
-This file is the shape; the course site's
-[assessment page](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#what-you-submit)
-is the requirement, and its
-[word counts](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#word-counts)
-cover every deliverable.
-
 ## What I built
 
-One paragraph: the thing, and the idea behind it.
+One paragraph: the course website for SLOP3446: Round Trip - Physical Artefacts Through the Machine and Back, a studio art course that introduces technology to art objects and expects students to transform works back and forth through both technological and more traditional artisitc methods.
 
 ## How I got here
 
-The account of the process: how the work actually went, and how you knew the
-result was right. Tell it in whatever order makes it clear. A weekly prototype
-needs a paragraph or two; an assignment needs more.
+first came ideation, wanting to create a course that I would actually want to take, but the university would never run  because it would be a logistical nightmare. the idea is based off of 'creative comuting' courses but flipped in the other direction, where you lean less on a purley digital result and instead more on physical art objects and traditional methods as steps in the process of making that still involves digital medias or methods somewhere. 
 
-Cite the record as you go, as links whose text is the commit hash or range and
-whose target is this repo's commit or compare URL, so a reader clicks straight
-to the evidence:
+In planning stages for what the content would actually be, and the best way to present it to students, plan mode was used to determine topics and refine the overall weekly outline. it was in this stage that I added a clause to the CLAUDE file to ensure that the course could be followable by two distinct types of students, pragramers and artists, both should be able to succeed so all materials needed to support that. This resulted in a drastic reordering of topics that would allow each group of students to have a better first few weeks of the course leading into the first assignment. [`2de6210...17f9507`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-QuackyDuck826/compare/2de6210...17f9507)
 
-- one commit: [`a1b2c3d`](https://github.com/YOUR-ORG/YOUR-REPO/commit/a1b2c3d)
-- a range:
-  [`a1b2c3d...e4f5a6b`](https://github.com/YOUR-ORG/YOUR-REPO/compare/a1b2c3d...e4f5a6b)
+producing the content itslef required a bit more finesse, I provided an example of what the first week should look like, breaking down a short lecture and then steps for an actual activity and got claude to extrapolate the rest of the weeks from there based off of the decided topic guide. This resulted in reasonable ideas but not the depth of information required to actually fill a lecture or tutorial time slot. From here I tried to get it to expand it on its own, but it was clearly stuggling to do so without significant help. My solution to this defecit was to provide it a better example of a similarly run course that was well documented in website form. Unfortunatley the ANU school of art is very anti-putting everything on the internet, so I instead handed it EXTN1019's lab collection (creative computing's yr11/12 counterpart). From this example it successfully just about trippled the depth of each tutorial notes into much deeper processes and ideas. [`fa9ad27...8ec7d07`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-QuackyDuck826/compare/fa9ad27...8ec7d07)
 
-To pair a prompt with the commit it produced, quote the prompt (curated, not a
-full transcript) next to the citation:
+After designing the tutorial tasks, the short lectures were planned in a way that they should provide a quick first-pass demo for what students will actually do each week, as well as showind ideas that are able to expand off of the explicity taught techniques in a way that is potentially possible for students within the later sections of the course. each weeks lecture page has a built in slide deck that would be run side by side to a lectrurer demoing the actual process or thing either in code or another program or acting onto a physical object. [`6fd7668...f68b44a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-QuackyDuck826/compare/6fd7668...f68b44a)
 
-> the prompt, verbatim
+A galley page was added to show off all of the extended use of techniques examples shown in at the end of each lecture togeher in one place. [`c4504cd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-QuackyDuck826/commit/c4504cd)
 
-Screenshots are welcome where one carries the point better than a sentence does.
-Commit the file to this repo and link it with a **relative** path, which is what
-makes it render on GitHub: `![alt text](docs/before.png)`. Images don't count
-towards the word count and don't replace the citation.
-
-## Before you ship
-
-`pnpm check:evidence` verifies that this comment is gone, that your citations
-resolve to real commits, that a crit week's reflection entry is in
-`reflections/`, and that your `CLAUDE.md` is there. It checks that your account
-is traceable, not that it is good: that is the marker's call.
-
-Images aren't checked: unlike a citation whose SHA doesn't resolve, a broken
-image is visible the moment this file is rendered on GitHub.
+Then came adding a bit of visual flair while keeping the cohesion from the brand provided colours. Ontop of the designated gold a complimentary blue was added, and featured in the banner patterns on each page. small profile pictures were made with DiceBear and their clours changed to map directly to brand colours. Designing a new hero image for the home page proved more complicated than expected, as after making an image and shifting the colours to be fully brand compliant the image became too low resolution to be displayed across the entire width of a screen. to resolve this I decided to use the cleaner version of the image with sligjlty off colours, and foudn even tha was slightly too small and appeared crusty when blown up to banner size. to lean into this I added a soft blur filter to the banner and now the image is less noticably clown up but looks intentionally clouded to layer behind the text better. [`ab47e47...cd102ce`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-QuackyDuck826/compare/ab47e47...cd102ce) 
