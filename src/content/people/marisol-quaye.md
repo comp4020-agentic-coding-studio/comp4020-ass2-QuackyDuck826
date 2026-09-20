@@ -6,6 +6,8 @@ description:
 affiliation: Slop University School of Invented Disciplines
 role: convenor
 email: marisol.quaye@slop.university
+photo: ../../assets/avatars/sprout-02.svg
+photoAlt: A stylised gold-and-bronze sprout avatar, in the house brand palette
 contact:
   Weekly studio hours are for course-level questions; use the session itself
   for feedback on work in progress.

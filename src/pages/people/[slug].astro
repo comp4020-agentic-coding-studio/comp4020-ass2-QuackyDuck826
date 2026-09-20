@@ -1,5 +1,6 @@
 ---
 import { render } from "astro:content";
+import { Image } from "astro:assets";
 import { getPublishedCollection } from "astro-course-university/content";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import { siteConfig } from "../../site-config";
@@ -33,10 +34,21 @@ const description = person.data.description;
 <ContentLayout
   title={person.data.title}
   description={description}
-  heroImage={person.data.photo ?? "/src/assets/banners/people.svg"}
-  heroImageAlt={person.data.photo ? photoAlt : ""}
+  heroImage="/src/assets/banners/people.svg"
+  heroImageAlt=""
   {...siteConfig}
 >
+  {
+    person.data.photo && (
+      <Image
+        src={person.data.photo}
+        alt={photoAlt}
+        width={72}
+        height={72}
+        class="person-avatar"
+      />
+    )
+  }
   <dl>
     {roleLabel && (
       <>
@@ -72,3 +84,14 @@ const description = person.data.description;
 
   <Content />
 </ContentLayout>
+
+<style>
+  .person-avatar {
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+    margin-block-end: 1rem;
+    border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+  }
+</style>

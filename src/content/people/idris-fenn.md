@@ -6,6 +6,8 @@ description:
 affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: idris.fenn@slop.university
+photo: ../../assets/avatars/sprout-01.svg
+photoAlt: A stylised gold-and-bronze sprout avatar, in the house brand palette
 contact:
   Ask during studio sessions first; email when a question can't wait until
   the next one.

@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { getPublishedCollection } from "astro-course-university/content";
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
@@ -39,20 +40,51 @@ const visible = people.sort((a, b) => {
 <CardGrid columns={2}>
   {
     visible.map((person) => (
-      <Card
-        headingLevel="h2"
-        title={person.data.title}
-        href={`/people/${person.id}/`}
-        image={person.data.photo ?? undefined}
-        imageAlt={photoAlt(person.data)}
-      >
-        {person.data.role && roleLabels[person.data.role] && (
-          <p>
-            <small>{roleLabels[person.data.role]}</small>
-          </p>
-        )}
-        <p>{person.data.description}</p>
+      <Card headingLevel="h2" title={person.data.title} href={`/people/${person.id}/`}>
+        <div class="person-summary">
+          {person.data.photo && (
+            <Image
+              src={person.data.photo}
+              alt={photoAlt(person.data) ?? ""}
+              width={56}
+              height={56}
+              class="person-avatar"
+            />
+          )}
+          <div class="person-summary-text">
+            {person.data.role && roleLabels[person.data.role] && (
+              <p>
+                <small>{roleLabels[person.data.role]}</small>
+              </p>
+            )}
+            <p>{person.data.description}</p>
+          </div>
+        </div>
       </Card>
     ))
   }
 </CardGrid>
+
+<style>
+  .person-summary {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .person-avatar {
+    flex-shrink: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+  }
+
+  .person-summary-text {
+    min-width: 0;
+  }
+
+  .person-summary-text > :first-child {
+    margin-block-start: 0;
+  }
+</style>
